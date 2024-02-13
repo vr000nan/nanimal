@@ -1,5 +1,6 @@
 import React from "react";
 import Modal from "./Modal";
+import './ModalStyles/modalStyles.css'
 
 const ModalOne = ({ closeFn = () => null, open = false }) => {
     return (
