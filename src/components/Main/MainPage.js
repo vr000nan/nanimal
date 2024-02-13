@@ -8,6 +8,21 @@ const MainPage = ({}) => {
         <button type="button" data-modal="modal-one">
           Open Modal One
         </button>
+        <button type="button" data-modal="modal-samples">
+          Samples
+        </button>
+        <button type="button" data-modal="modal-history">
+          History
+        </button>
+        <button type="button" data-modal="modal-about">
+          About
+        </button>
+        <button type="button" data-modal="modal-skills">
+          Skills
+        </button>
+        <button type="button" data-modal="modal-contact">
+          Contact
+        </button>
         </div>
     )
 }
