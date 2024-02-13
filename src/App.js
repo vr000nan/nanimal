@@ -1,9 +1,12 @@
 import './App.css';
+import PreLoader from './components/Preloader/PreLoader';
 
 function App() {
   return (
    <>
-   NANIMAL
+    <PreLoader />
+
+    NANIMAL.DEV
    </>
 
   );
