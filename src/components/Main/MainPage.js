@@ -5,9 +5,6 @@ const MainPage = ({}) => {
 
     return(
         <div style={{ display: 'flex', columnGap: '1rem' }}>
-        <button type="button" data-modal="modal-one">
-          Open Modal One
-        </button>
         <button type="button" data-modal="modal-samples">
           Samples
         </button>

@@ -1,5 +1,4 @@
 import React from "react";
-import ModalOne from "./ModalOne";
 import Samples from "./Samples";
 import History from "./History";
 import About from "./About";
@@ -13,11 +12,6 @@ const ModalManager = ({
 
     return(
         <>
-        <ModalOne 
-            closeFn={closeFn}
-            open={modal === 'modal-one'}
-        />
-
         <Samples 
             closeFn={closeFn}
             open={modal === 'modal-samples'}
