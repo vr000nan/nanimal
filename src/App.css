@@ -1,7 +1,23 @@
-/* #app-root {
-    height: 100vh;
-  } */
+@font-face {
+  font-family: Cyber;
+  src: url("https://assets.codepen.io/605876/Blender-Pro-Bold.otf");
+  font-display: swap;
+}
 
-button {
-    cursor: pointer;
-  }
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+  font-family: 'Cyber', sans-serif;
+  background: linear-gradient(90deg, #f5ed00 70%, #e6de00 70%), #fff700;
+}
+
+body .cybr-btn + .cybr-btn {
+  margin-top: 2rem;
+}
