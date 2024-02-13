@@ -8,12 +8,13 @@ const ModalOne = ({ closeFn = () => null, open = false }) => {
         <div className="modal--mask">
           <div className="modal-window">
             <header className="modal--header">
+              
               <div className="modal--x">
                 <button type="button" onClick={closeFn}>
                   X
                 </button>
                </div>
-               <h1>Modal One</h1>
+               <h1>Modal 1</h1>
               </header>
             <div className="modal--body">
               <p>Modal One content will be rendered here.</p>
