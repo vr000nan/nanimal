@@ -24,6 +24,7 @@ function App() {
     <div className='app--shell' onClick={openModal}>
       <MainPage />
       <ModalManager closeFn={closeModal} modal={modalOpen}/>
+      {/* RESUME BUTTON */}
     </div>
 
    </>

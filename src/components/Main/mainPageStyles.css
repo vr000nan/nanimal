@@ -1,3 +1,20 @@
+.container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Set the height of the container to viewport height to center the content vertically */
+}
+
+.main-image {
+  width: 300px; /* Adjust the width of the image as needed */
+  height: auto; /* Maintain aspect ratio */
+  position: absolute;
+  top: 50%; /* Place the image at the center vertically */
+  left: 50%; /* Place the image at the center horizontally */
+  transform: translate(-50%, -50%); /* Center the image precisely */
+}
+  
   .cybr-btn {
     --primary: hsl(var(--primary-hue), 85%, calc(var(--primary-lightness, 50) * 1%));
     --shadow-primary: hsl(var(--shadow-primary-hue), 90%, 50%);
@@ -27,13 +44,17 @@
     font-size: var(--font-size);
     outline: transparent;
     letter-spacing: 2px;
-    position: relative;
+    position: absolute;
     font-weight: 700;
     border: 0;
     min-width: 300px;
     height: 75px;
     line-height: 75px;
     transition: background 0.2s;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   
   .cybr-btn:hover {
@@ -169,3 +190,28 @@
   .cybr-btn:nth-of-type(2) {
     --primary-hue: 260;
   }
+
+  .button-1 {
+    top: calc(68% - 75px); /* Adjust the distance from the top */
+    left: calc(0% - 550px); /* Adjust the distance from the left */
+}
+
+  .button-2 {
+      top: calc(35% - 25px); /* Adjust the distance from the top */
+      left: calc(0% - 505px); /* Adjust the distance from the left */
+  }
+
+  .button-3 {
+      top: calc(0% + 55px); /* Adjust the distance from the top */
+      left: calc(50% - 150px); /* Adjust the distance from the left */
+  }
+
+  .button-4 {
+      top: calc(39% - 25px); /* Adjust the distance from the top */
+      left: calc(100% + 205px); /* Adjust the distance from the left */
+  }
+
+  .button-5 {
+    top: calc(64% - 75px); /* Adjust the distance from the top */
+    left: calc(85% + 250px); /* Adjust the distance from the left */
+}
