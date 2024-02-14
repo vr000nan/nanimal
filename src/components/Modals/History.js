@@ -2,26 +2,27 @@ import React from "react";
 import Modal from "./Modal";
 import './ModalStyles/modalStyles.css'
 
-const ModalOne = ({ closeFn = () => null, open = false }) => {
+const History = ({ closeFn = () => null, open = false }) => {
     return (
       <Modal open={open}>
         <div className="modal--mask">
           <div className="modal-window">
             <header className="modal--header">
-              <h1>Modal One</h1>
-            </header>
+              
+              <div className="modal--x">
+                <button type="button" onClick={closeFn}>
+                  X
+                </button>
+               </div>
+               <h1>History</h1>
+              </header>
             <div className="modal--body">
-              <p>Modal One content will be rendered here.</p>
+              <p>History</p>
             </div>
-            <footer className="modal--footer">
-              <button type="button" onClick={closeFn}>
-                Close
-              </button>
-            </footer>
           </div>
         </div>
       </Modal>
     );
   };
 
-export default ModalOne;
+export default History;

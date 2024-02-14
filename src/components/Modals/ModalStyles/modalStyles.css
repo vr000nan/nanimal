@@ -1,37 +1,47 @@
 .modal--mask {
-    background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 9998;
+  animation: fadeIn 0.5s cubic-bezier(0.165, 0.840, 0.440, 1.000);
+}
+
+.modal-window {
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.8);
+  min-width: 50%;
+}
+
+.modal--header,
+.modal--body,
+.modal--footer {
+  margin: 0;
+  padding: 1rem;
+}
+
+.modal--header h1 {
+  margin: 0;
+  padding: 0;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+  
+  .modal--x {
     display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    z-index: 9998;
-  }
-  
-  .modal-window {
-    background-color: rgb(255, 255, 255);
-    box-shadow: 0 0 6px rgba(0, 0, 0, 0.8);
-    min-width: 50%;
-  }
-  
-  .modal--header,
-  .modal--body,
-  .modal--footer {
-    margin: 0;
-    padding: 1rem;
-  }
-  
-  .modal--header h1 {
-    margin: 0;
-    padding: 0;
-  }
-  
-  .modal--footer {
-    display: flex;
-    justify-content: flex-end;
+    justify-content: right;
     column-gap: 1rem;
   }
