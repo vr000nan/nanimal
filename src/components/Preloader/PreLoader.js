@@ -11,8 +11,8 @@ const PreLoader = () => {
     return(
         <div className="preloader">
             <div className="texts-container">
-                <span>welcome</span>
-                <span>to</span>
+                <span>now</span>
+                <span>loading</span>
                 <span>nanimal.DEV...</span>
             </div>
         </div>
