@@ -5,6 +5,7 @@ import PreLoader from './components/Preloader/PreLoader';
 
 import './App.css';
 import MainPage from './components/Main/MainPage';
+import PDFFile from './components/Resume/PDFFile';
 
 function App() {
   const[modalOpen, setModal] = useState(false);
@@ -20,11 +21,11 @@ function App() {
 
   return (
    <>
-    <PreLoader />
+    {/* <PreLoader /> */}
     <div className='app--shell' onClick={openModal}>
-      <MainPage />
-      <ModalManager closeFn={closeModal} modal={modalOpen}/>
-      {/* RESUME BUTTON */}
+      {/* <MainPage /> */}
+      {/* <ModalManager closeFn={closeModal} modal={modalOpen}/> */}
+      <PDFFile />
     </div>
 
    </>
