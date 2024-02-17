@@ -193,12 +193,12 @@
 
   .button-1 {
     top: calc(68% - 75px); /* Adjust the distance from the top */
-    left: calc(0% - 550px); /* Adjust the distance from the left */
+    left: calc(0% - 400px); /* Adjust the distance from the left */
 }
 
   .button-2 {
       top: calc(35% - 25px); /* Adjust the distance from the top */
-      left: calc(0% - 505px); /* Adjust the distance from the left */
+      left: calc(0% - 335px); /* Adjust the distance from the left */
   }
 
   .button-3 {
@@ -207,11 +207,11 @@
   }
 
   .button-4 {
-      top: calc(39% - 25px); /* Adjust the distance from the top */
-      left: calc(100% + 205px); /* Adjust the distance from the left */
+      top: calc(35% - 25px); /* Adjust the distance from the top */
+      left: calc(100% + 40px); /* Adjust the distance from the left */
   }
 
   .button-5 {
-    top: calc(64% - 75px); /* Adjust the distance from the top */
-    left: calc(85% + 250px); /* Adjust the distance from the left */
+    top: calc(68% - 75px); /* Adjust the distance from the top */
+    left: calc(100% + 95px); /* Adjust the distance from the left */
 }
