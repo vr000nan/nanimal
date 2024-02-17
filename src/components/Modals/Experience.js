@@ -2,7 +2,7 @@ import React from "react";
 import Modal from "./Modal";
 import './ModalStyles/modalStyles.css'
 
-const History = ({ closeFn = () => null, open = false }) => {
+const Experience = ({ closeFn = () => null, open = false }) => {
     return (
       <Modal open={open}>
         <div className="modal--mask">
@@ -14,10 +14,10 @@ const History = ({ closeFn = () => null, open = false }) => {
                   X
                 </button>
                </div>
-               <h1>History</h1>
+               <h1>Experience</h1>
               </header>
             <div className="modal--body">
-              <p>History</p>
+              <p>Experience</p>
             </div>
           </div>
         </div>
@@ -25,4 +25,4 @@ const History = ({ closeFn = () => null, open = false }) => {
     );
   };
 
-export default History;
+export default Experience;

@@ -1,6 +1,6 @@
 import React from "react";
 import Samples from "./Samples";
-import History from "./History";
+import History from "./Experience";
 import About from "./About";
 import Skills from "./Skills";
 import Contact from "./Contact";
@@ -19,7 +19,7 @@ const ModalManager = ({
 
         <History 
             closeFn={closeFn}
-            open={modal === 'modal-history'}
+            open={modal === 'modal-experience'}
         />
 
         <About 
