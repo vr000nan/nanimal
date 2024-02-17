@@ -6,6 +6,7 @@ import PreLoader from './components/Preloader/PreLoader';
 import './App.css';
 import MainPage from './components/Main/MainPage';
 import PDFFile from './components/Resume/PDFFile';
+import { PDFDownloadLink } from '@react-pdf/renderer';
 
 function App() {
   const[modalOpen, setModal] = useState(false);
@@ -25,7 +26,9 @@ function App() {
     <div className='app--shell' onClick={openModal}>
       {/* <MainPage /> */}
       {/* <ModalManager closeFn={closeModal} modal={modalOpen}/> */}
-      <PDFFile />
+      <PDFDownloadLink document={<PDFFile/>} fileName="RESUME">
+        <button>Download Résumé</button>
+      </PDFDownloadLink>
     </div>
 
    </>
