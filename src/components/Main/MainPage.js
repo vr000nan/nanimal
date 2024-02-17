@@ -31,11 +31,9 @@ const MainPage = ({}) => {
             <span aria-hidden class="cybr-btn__glitch">ʇɔɐʇuoɔ</span>
           </button>
 
-          {/* <div className="resume-btn" > */}
             <PDFDownloadLink document={<PDFFile/>} fileName="Nan-Resume">
-              <button className="resume-btn">Download Resume</button>
+              <button className="resume-btn">View My Resume</button>
             </PDFDownloadLink>
-          {/* </div> */}
         </div>
     )
 }

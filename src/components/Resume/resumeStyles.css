@@ -1,8 +1,20 @@
 .resume-btn {
     cursor: pointer;
-    z-index: 9;
-    margin-top: 650px;
-    background: #009938;
+    z-index: 10;
+    margin-top: 590px;
+    margin-left: 1vw;
+
+    font-family: 'Cyber', sans-serif;
+    background: transparent;
+    text-transform: uppercase;
+    font-weight: 800;
+    border: 0;
+
+    color: #3FDC69;
+    letter-spacing: 7px;
+    font-size: 40px;
+
+    align-items: center;
   }
 /* 
   outline: transparent;

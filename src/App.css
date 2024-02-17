@@ -17,7 +17,3 @@ body {
   font-family: 'Cyber', sans-serif;
   background: #361566
 }
-
-body .cybr-btn + .cybr-btn {
-  margin-top: 2rem;
-}
