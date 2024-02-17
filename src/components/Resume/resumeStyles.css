@@ -1,7 +1,10 @@
+.resume-btn-container{
+  margin-top: 630px;
+}
 .resume-btn {
     cursor: pointer;
     z-index: 10;
-    margin-top: 590px;
+    padding-top: 5px;
     margin-left: 1vw;
 
     font-family: 'Cyber', sans-serif;
