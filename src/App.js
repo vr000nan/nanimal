@@ -22,12 +22,12 @@ function App() {
 
   return (
    <>
-    {/* <PreLoader /> */}
+    <PreLoader />
     <div className='app--shell' onClick={openModal}>
-      {/* <MainPage /> */}
-      {/* <ModalManager closeFn={closeModal} modal={modalOpen}/> */}
-      <PDFDownloadLink document={<PDFFile/>} fileName="RESUME">
-        <button>Download Résumé</button>
+      <MainPage />
+      <ModalManager closeFn={closeModal} modal={modalOpen}/>
+      <PDFDownloadLink document={<PDFFile/>} fileName="Nan-Resume">
+        <button className="resume-btn">Download Résumé</button>
       </PDFDownloadLink>
     </div>
 

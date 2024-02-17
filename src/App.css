@@ -15,9 +15,28 @@ body {
   justify-content: center;
   min-height: 100vh;
   font-family: 'Cyber', sans-serif;
-  background: linear-gradient(90deg, #f5ed00 70%, #e6de00 70%), #fff700;
+  background: #361566
 }
 
 body .cybr-btn + .cybr-btn {
   margin-top: 2rem;
+}
+
+.resume-btn {
+  cursor: pointer;
+  background: transparent;
+  text-transform: uppercase;
+  font-size: 30px;
+  color: #3FDC69;
+  outline: transparent;
+  letter-spacing: 5px;
+  position: absolute;
+  font-weight: 700;
+  border: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  float: left;
 }

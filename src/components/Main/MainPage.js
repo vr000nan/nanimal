@@ -1,6 +1,7 @@
 import React from "react";
 import './mainPageStyles.css';
 
+
 const MainPage = ({}) => {
 
     return(
