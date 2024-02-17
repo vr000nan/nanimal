@@ -1,5 +1,8 @@
 import React from "react";
 import './mainPageStyles.css';
+import '../Resume/resumeStyles.css';
+import PDFFile from "../Resume/PDFFile";
+import { PDFDownloadLink } from "@react-pdf/renderer";
 
 const MainPage = ({}) => {
 
@@ -27,6 +30,10 @@ const MainPage = ({}) => {
             contact
             <span aria-hidden class="cybr-btn__glitch">ʇɔɐʇuoɔ</span>
           </button>
+
+            <PDFDownloadLink document={<PDFFile/>} fileName="Nan-Resume">
+              <button className="resume-btn">View My Resume</button>
+            </PDFDownloadLink>
         </div>
     )
 }
