@@ -1,0 +1,25 @@
+.resume-btn {
+    cursor: pointer;
+    z-index: 9;
+    margin-top: 650px;
+    background: #009938;
+  }
+/* 
+  outline: transparent;
+    letter-spacing: 5px;
+    position: absolute; /* come back to this*/ 
+    /* font-weight: 700;
+    border: 0;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center; */
+   /* */ 
+
+   /*     cursor: pointer;
+    background: transparent;
+    text-transform: uppercase;
+    font-size: 30px;
+    color: #3FDC69;
+    margin-top: 650px;
+    outline: transparent; */
