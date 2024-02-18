@@ -4,5 +4,9 @@
 }
 
 .about-icons {
-    margin-left: 11rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-left: 20%;
+    margin-right: 20%;
 }

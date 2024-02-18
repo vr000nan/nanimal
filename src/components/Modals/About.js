@@ -26,9 +26,21 @@ const About = ({ closeFn = () => null, open = false }) => {
         <div className="modal-window">
 
           <div className="modal--body">
-          <header className="modal--header">
-            <h1>About</h1>
-          </header>
+
+
+            {/* <div className="modal--x">
+              <button type="button" onClick={closeFn}>
+                X
+              </button>
+            </div> */}
+            <h1>About
+
+              <button type="button" onClick={closeFn}>
+                X
+              </button>
+
+            </h1>
+
             <img src="/PlaceholderAbout.png" alt="aboutImage" className="about-image" />
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Viverra aliquet eget sit amet tellus cras. Sit amet est placerat in egestas erat imperdiet. Lacus vestibulum sed arcu non odio. Augue neque gravida in fermentum et.
@@ -42,15 +54,7 @@ const About = ({ closeFn = () => null, open = false }) => {
             <a href="https://www.linkedin.com/in/nan-wroblewski-09547a224/"><img src="/instagramIcon.png"></img></a>
             </div>
 
-            <div className="modal--x">
-            <button type="button" onClick={closeFn}>
-              X
-            </button>
           </div>
-          </div>
-
-
-
         </div>
       </div>
     </Modal>
