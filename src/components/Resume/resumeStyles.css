@@ -23,6 +23,6 @@
 
   .resume-btn:hover {
     color: #ffffff;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 30px;
+    /* font-family: 'Courier New', Courier, monospace; */
+    /* font-size: 30px; */
   }

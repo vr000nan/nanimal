@@ -6,8 +6,6 @@ import PreLoader from './components/Preloader/PreLoader';
 import './App.css';
 import './components/Resume/resumeStyles.css';
 import MainPage from './components/Main/MainPage';
-import PDFFile from './components/Resume/PDFFile';
-import { PDFDownloadLink } from '@react-pdf/renderer';
 
 function App() {
   const[modalOpen, setModal] = useState(false);

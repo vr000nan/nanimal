@@ -147,12 +147,6 @@ export const openMenu = () => {
       },
       "-=.3"
     );
-
-  // change cursor color when nav is open
-  // tl.to(".cursor", {
-  //   delay: -1,
-  //   css: { className: "+=cursor-active" },
-  // }).to(".cursor2", { delay: -1, css: { className: "+=cursor2-active" } });
 };
 
 export const closeMenu = () => {
@@ -274,47 +268,4 @@ const animateMainShape = () => {
       y: 0,
       ease: "expo.easeOut",
     });
-};
-
-export const boxHover = (e) => {
-  const tl = gsap.timeline();
-  window.innerWidth >= 986 &&
-    tl
-      .to(e.target.querySelector(".link"), {
-        duration: 0,
-        opacity: 1,
-      })
-      .from(e.target.querySelectorAll(".box-anim"), {
-        duration: 0.3,
-        opacity: 0,
-        y: 30,
-        stagger: 0.1,
-        ease: "Power3.easeOut",
-      });
-};
-
-export const boxExit = (e) => {
-  window.innerWidth >= 986 &&
-    gsap.to(e.target.querySelector(".link"), {
-      duration: 0,
-      opacity: 0,
-    });
-};
-
-export const fadeIn = (el) => {
-  gsap.to(el, {
-    duration: 2,
-    opacity: 1,
-    y: -60,
-    ease: "power4.out",
-  });
-};
-
-export const fadeOut = (el) => {
-  gsap.to(el, {
-    duration: 1,
-    opacity: 0,
-    y: -20,
-    ease: "power4.out",
-  });
 };
