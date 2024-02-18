@@ -23,7 +23,7 @@ function App() {
 
   return (
    <>
-    {/* <PreLoader /> */}
+    <PreLoader />
     <div className='app--shell' onClick={openModal}>
       <MainPage />
       <ModalManager closeFn={closeModal} modal={modalOpen}/>
