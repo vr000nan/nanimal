@@ -27,12 +27,6 @@ const About = ({ closeFn = () => null, open = false }) => {
 
           <div className="modal--body">
 
-
-            {/* <div className="modal--x">
-              <button type="button" onClick={closeFn}>
-                X
-              </button>
-            </div> */}
             <h1>About
 
               <button type="button" onClick={closeFn}>
