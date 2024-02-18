@@ -10,10 +10,6 @@ const Modal = ({ children, open = false }) => {
     setIsOpen(open);
   }, [open]);
 
-  const handleClose = () => {
-    setIsOpen(false);
-  };
-
   return isOpen ? ReactDOM.createPortal(
     <div className="modal--mask">
       <div className="modal-window">
