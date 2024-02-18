@@ -1,0 +1,12 @@
+.about-image {
+    float: right;
+    height: 40vh;
+}
+
+.about-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-left: 20%;
+    margin-right: 20%;
+}

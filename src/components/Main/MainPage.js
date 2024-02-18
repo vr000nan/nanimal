@@ -12,9 +12,9 @@ const MainPage = ({}) => {
             samples
             <span aria-hidden class="cybr-btn__glitch">sǝʅdɯɐs</span>
           </button>
-          <button type="button" data-modal="modal-history" class="cybr-btn button-2">
-            history
-            <span aria-hidden class="cybr-btn__glitch">ʎɹoʇsᴉɥ</span>
+          <button type="button" data-modal="modal-experience" class="cybr-btn button-2">
+            experience
+            <span aria-hidden class="cybr-btn__glitch">ǝɔuǝᴉɹǝdxǝ</span>
           </button>
           
           <button type="button" data-modal="modal-about" class="cybr-btn button-3">

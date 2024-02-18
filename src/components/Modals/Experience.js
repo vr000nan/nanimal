@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import Modal from "./Modal";
 import './ModalStyles/modalStyles.css'
 
-const Contact = ({ closeFn = () => null, open = false }) => {
+const Experience = ({ closeFn = () => null, open = false }) => {
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (event.target.classList.contains('modal--mask')) {
@@ -40,4 +40,4 @@ const Contact = ({ closeFn = () => null, open = false }) => {
   );
 };
 
-export default Contact;
+export default Experience;
