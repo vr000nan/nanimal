@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import Modal from "./Modal";
 import './ModalStyles/modalStyles.css'
+import CarouselItem from "./CarouselItem";
 
 const Samples = ({ closeFn = () => null, open = false }) => {
   useEffect(() => {
@@ -19,6 +20,25 @@ const Samples = ({ closeFn = () => null, open = false }) => {
     };
   }, [closeFn, open]);
 
+  // Carousel Stuff
+  const sampleItems = [
+    {
+      title: "Item 1",
+      description: "Brief Description",
+      icon: "PlaceholderAbout.png"
+    },
+    {
+      title: "Item 2",
+      description: "Brief Description 2",
+      icon: "PlaceholderAbout.png"
+    },
+    {
+      title: "Item 3",
+      description: "Brief Description 3",
+      icon: "PlaceholderAbout.png"
+    }
+  ];
+
   return (
     <Modal open={open}>
       <div className="modal--mask">
@@ -26,13 +46,7 @@ const Samples = ({ closeFn = () => null, open = false }) => {
 
           <div className="modal--body">
 
-
-            {/* <div className="modal--x">
-              <button type="button" onClick={closeFn}>
-                X
-              </button>
-            </div> */}
-            <h1>About
+            <h1>Samples
 
               <button type="button" onClick={closeFn}>
                 X
@@ -40,17 +54,12 @@ const Samples = ({ closeFn = () => null, open = false }) => {
 
             </h1>
 
-            <img src="/PlaceholderAbout.png" alt="aboutImage" className="about-image" />
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Viverra aliquet eget sit amet tellus cras. Sit amet est placerat in egestas erat imperdiet. Lacus vestibulum sed arcu non odio. Augue neque gravida in fermentum et.
-              <br></br>
-              Lacinia quis vel eros donec ac odio. Ac ut consequat semper viverra nam libero justo laoreet. Porta lorem mollis aliquam ut. Ornare arcu dui vivamus arcu felis. Vel eros donec ac odio tempor orci dapibus ultrices. Adipiscing vitae proin sagittis nisl rhoncus. Tortor id aliquet lectus proin nibh.
-            </p>
-
-            <div className="about-icons">
-            <a href="https://www.linkedin.com/in/nan-wroblewski-09547a224/"><img src="/linkedinIcon.png"></img></a>
-            <a href="https://www.linkedin.com/in/nan-wroblewski-09547a224/"><img src="/githubIcon.png"></img></a>
-            <a href="https://www.linkedin.com/in/nan-wroblewski-09547a224/"><img src="/instagramIcon.png"></img></a>
+            <div className="samplesCarousel">
+              <div className="innerCarousel">
+                  {sampleItems.map((i) => {
+                    return <CarouselItem i={i}/>
+                  })}
+              </div>
             </div>
 
           </div>
