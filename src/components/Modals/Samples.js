@@ -51,6 +51,15 @@ const Samples = ({ closeFn = () => null, open = false }) => {
   ];
 
   const [activeIndex, setActiveIndex] = useState(0);
+  const updateIndex = (newIndex) => {
+    if (newIndex < 0){
+      newIndex = 0;
+    } else if (newIndex >= sampleItems.length) {
+      newIndex = sampleItems.length - 1;
+    }
+
+    setActiveIndex(newIndex)
+  };
 
   return (
     <Modal open={open}>
@@ -69,7 +78,7 @@ const Samples = ({ closeFn = () => null, open = false }) => {
 
             <div className="samplesCarousel">
               <div className="innerCarousel"
-                style={{transform: `translate:(-${activeIndex * 100})`}}
+                style={{transform: `translate(-${activeIndex * 100}%)`}}
               >
                   {sampleItems.map((i) => {
                     return <CarouselItem i={i}/>
@@ -77,15 +86,35 @@ const Samples = ({ closeFn = () => null, open = false }) => {
               </div>
 
               <div className="carousel-buttons">
-                  <button className="button-arrow">
+                  <button onClick={() => {
+                    updateIndex(activeIndex - 1);
+                  }}
+                   className="button-arrow">
                   <span class="material-symbols-outlined">arrow_back_ios</span>
                   </button>
                   <div className="carousel-indicators">
-                    <button className="indicator-buttons">
-                    <span class="material-symbols-outlined">radio_button_checked</span>
-                    </button>
+                    {sampleItems.map((i, idx) => {
+                      return(
+                        <button className="indicator-buttons"
+                          onClick={() => {
+                            updateIndex(idx);
+                          }}
+                        >
+                        <span class={`material-symbols-outlined ${
+                          idx === activeIndex
+                          ? "indicator-symbol-active" : "indicator-symbol"
+                        }
+                        `}>radio_button_checked</span>
+                        </button>
+                      )
+                    })}
+
                   </div>
-                  <button className="button-arrow">
+                  <div className="carousel-buttons">
+                  <button onClick={() => {
+                    updateIndex(activeIndex + 1);
+                  }}
+                   className="button-arrow">
                     <span class="material-symbols-outlined">arrow_forward_ios</span>
                   </button>
               </div>
@@ -93,6 +122,7 @@ const Samples = ({ closeFn = () => null, open = false }) => {
 
           </div>
         </div>
+      </div>
       </div>
     </Modal>
   );
