@@ -1,6 +1,7 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import Modal from "./Modal";
-import './ModalStyles/modalStyles.css'
+import './ModalStyles/modalStyles.css';
+import './ModalStyles/samplesStyles.css';
 import CarouselItem from "./CarouselItem";
 
 const Samples = ({ closeFn = () => null, open = false }) => {
@@ -39,6 +40,8 @@ const Samples = ({ closeFn = () => null, open = false }) => {
     }
   ];
 
+  const [activeIndex, setActiveIndex] = useState(0);
+
   return (
     <Modal open={open}>
       <div className="modal--mask">
@@ -55,7 +58,9 @@ const Samples = ({ closeFn = () => null, open = false }) => {
             </h1>
 
             <div className="samplesCarousel">
-              <div className="innerCarousel">
+              <div className="innerCarousel"
+                style={{transform: `translate:(-${activeIndex * 100})`}}
+              >
                   {sampleItems.map((i) => {
                     return <CarouselItem i={i}/>
                   })}
