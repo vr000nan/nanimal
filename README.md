@@ -5,3 +5,7 @@
 #Cyber Buttons
     Styling and animation created by Jhey
     https://codepen.io/jh3y/pen/PoGbxLp
+
+#About Modal Icons
+    Designed by icons8.com
+    https://icons8.com/icon/set/social-media/nolan

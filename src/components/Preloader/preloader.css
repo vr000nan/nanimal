@@ -1,8 +1,7 @@
 .preloader{
     height: 100vh;
-    width: 100%;
-    background: #000;
-    color: #FFF;
+    width: 100vw;
+    background: #051C2C;
     position: fixed;
     bottom: 0;
     left: 0;
@@ -23,5 +22,5 @@
     font-size: 20px;
     font-weight: 800;
     overflow: hidden;
-    color: #FFF;
+    color: #00BCE1;
 }

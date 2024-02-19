@@ -16,8 +16,8 @@
 }
   
   .cybr-btn {
-    --primary: hsl(var(--primary-hue), 85%, calc(var(--primary-lightness, 50) * 1%)); /* button red */
-    --shadow-primary: hsl(var(--shadow-primary-hue), 90%, 50%); /* button cyan */
+    --primary: #4b128b; /* button red */
+    --shadow-primary: #59CBE8; /* button cyan */
     --primary-hue: 0;
     --primary-lightness: 50;
     --color: hsl(0, 0%, 100%);
@@ -58,10 +58,7 @@
   }
   
   .cybr-btn:hover {
-    --primary: hsl(var(--primary-hue), 85%, calc(var(--primary-lightness, 50) * 0.8%));
-  }
-  .cybr-btn:active {
-    --primary: hsl(var(--primary-hue), 85%, calc(var(--primary-lightness, 50) * 0.6%));
+    --primary: #3d067c;
   }
   
   .cybr-btn:after,

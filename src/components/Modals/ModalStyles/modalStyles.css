@@ -1,5 +1,5 @@
 .modal--mask {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(40, 27, 87, 0.6);
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
@@ -15,9 +15,11 @@
 
 .modal-window {
   background-color: #201547;
-  box-shadow: 0 0 6px rgba(0, 0, 0, 0.8);
+  box-shadow: 0 0 6px rgba(32, 21, 71, 0.8);
   width: 40%;
   height: 75%;
+
+  /* border: #3d1875 double 5px; */
 }
 
 @keyframes fadeIn {
