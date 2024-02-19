@@ -37,6 +37,16 @@ const Samples = ({ closeFn = () => null, open = false }) => {
       title: "Item 3",
       description: "Brief Description 3",
       icon: "PlaceholderAbout.png"
+    },
+    {
+      title: "Item 3",
+      description: "Brief Description 4",
+      icon: "PlaceholderAbout.png"
+    },
+    {
+      title: "Item 5",
+      description: "Brief Description 5",
+      icon: "PlaceholderAbout.png"
     }
   ];
 
@@ -64,6 +74,20 @@ const Samples = ({ closeFn = () => null, open = false }) => {
                   {sampleItems.map((i) => {
                     return <CarouselItem i={i}/>
                   })}
+              </div>
+
+              <div className="carousel-buttons">
+                  <button className="button-arrow">
+                  <span class="material-symbols-outlined">arrow_back_ios</span>
+                  </button>
+                  <div className="carousel-indicators">
+                    <button className="indicator-buttons">
+                    <span class="material-symbols-outlined">radio_button_checked</span>
+                    </button>
+                  </div>
+                  <button className="button-arrow">
+                    <span class="material-symbols-outlined">arrow_forward_ios</span>
+                  </button>
               </div>
             </div>
 
