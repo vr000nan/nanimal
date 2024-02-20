@@ -26,6 +26,7 @@ const Samples = ({ closeFn = () => null, open = false }) => {
     {
       title: "Item 1",
       description: "Brief Description",
+      
       icon: "PlaceholderAbout.png"
     },
     {
@@ -52,13 +53,14 @@ const Samples = ({ closeFn = () => null, open = false }) => {
 
   const [activeIndex, setActiveIndex] = useState(0);
   const updateIndex = (newIndex) => {
-    if (newIndex < 0){
-      newIndex = 0;
+    let nextIndex = newIndex;
+    if (newIndex < 0) {
+      nextIndex = sampleItems.length - 1; // Go to the last item if newIndex is less than 0
     } else if (newIndex >= sampleItems.length) {
-      newIndex = sampleItems.length - 1;
+      nextIndex = 0; // Go to the first item if newIndex is greater than or equal to the length of sampleItems
     }
-
-    setActiveIndex(newIndex)
+  
+    setActiveIndex(nextIndex);
   };
 
   return (
