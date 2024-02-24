@@ -1,6 +1,8 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import Modal from "./Modal";
-import './ModalStyles/modalStyles.css'
+import './ModalStyles/modalStyles.css';
+import './ModalStyles/samplesStyles.css';
+import CarouselItem from "./CarouselItem";
 
 const Samples = ({ closeFn = () => null, open = false }) => {
   useEffect(() => {
@@ -19,6 +21,52 @@ const Samples = ({ closeFn = () => null, open = false }) => {
     };
   }, [closeFn, open]);
 
+  // Carousel Stuff
+  const sampleItems = [
+    {
+      title: "Item 1",
+      description: "Brief Description of the project. What it is, what it does...",
+      tech: "tech icons used in the making",
+      icon: "PlaceholderAbout.png"
+    },
+    {
+      title: "Item 1",
+      description: "Brief Description of the project. What it is, what it does...",
+      tech: "tech icons used in the making",
+      icon: "PlaceholderAbout.png"
+    },
+    {
+      title: "Item 1",
+      description: "Brief Description of the project. What it is, what it does...",
+      tech: "tech icons used in the making",
+      icon: "PlaceholderAbout.png"
+    },
+    {
+      title: "Item 1",
+      description: "Brief Description of the project. What it is, what it does...",
+      tech: "tech icons used in the making",
+      icon: "PlaceholderAbout.png"
+    },
+    {
+      title: "Item 1",
+      description: "Brief Description of the project. What it is, what it does...",
+      tech: "tech icons used in the making",
+      icon: "PlaceholderAbout.png"
+    }
+  ];
+
+  const [activeIndex, setActiveIndex] = useState(0);
+  const updateIndex = (newIndex) => {
+    let nextIndex = newIndex;
+    if (newIndex < 0) {
+      nextIndex = sampleItems.length - 1; // Go to the last item if newIndex is less than 0
+    } else if (newIndex >= sampleItems.length) {
+      nextIndex = 0; // Go to the first item if newIndex is greater than or equal to the length of sampleItems
+    }
+  
+    setActiveIndex(nextIndex);
+  };
+
   return (
     <Modal open={open}>
       <div className="modal--mask">
@@ -26,13 +74,7 @@ const Samples = ({ closeFn = () => null, open = false }) => {
 
           <div className="modal--body">
 
-
-            {/* <div className="modal--x">
-              <button type="button" onClick={closeFn}>
-                X
-              </button>
-            </div> */}
-            <h1>About
+            <h1>Samples
 
               <button type="button" onClick={closeFn}>
                 X
@@ -40,21 +82,53 @@ const Samples = ({ closeFn = () => null, open = false }) => {
 
             </h1>
 
-            <img src="/PlaceholderAbout.png" alt="aboutImage" className="about-image" />
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Viverra aliquet eget sit amet tellus cras. Sit amet est placerat in egestas erat imperdiet. Lacus vestibulum sed arcu non odio. Augue neque gravida in fermentum et.
-              <br></br>
-              Lacinia quis vel eros donec ac odio. Ac ut consequat semper viverra nam libero justo laoreet. Porta lorem mollis aliquam ut. Ornare arcu dui vivamus arcu felis. Vel eros donec ac odio tempor orci dapibus ultrices. Adipiscing vitae proin sagittis nisl rhoncus. Tortor id aliquet lectus proin nibh.
-            </p>
+            <div className="samplesCarousel">
+              <div className="innerCarousel"
+                style={{transform: `translate(-${activeIndex * 100}%)`}}
+              >
+                  {sampleItems.map((i) => {
+                    return <CarouselItem i={i}/>
+                  })}
+              </div>
 
-            <div className="about-icons">
-            <a href="https://www.linkedin.com/in/nan-wroblewski-09547a224/"><img src="/linkedinIcon.png"></img></a>
-            <a href="https://www.linkedin.com/in/nan-wroblewski-09547a224/"><img src="/githubIcon.png"></img></a>
-            <a href="https://www.linkedin.com/in/nan-wroblewski-09547a224/"><img src="/instagramIcon.png"></img></a>
-            </div>
+              <div className="carousel-buttons">
+  <button onClick={() => {
+    updateIndex(activeIndex - 1);
+  }}
+   className="button-arrow">
+  <span className="material-symbols-outlined">arrow_back_ios</span>
+  </button>
+  
+  <div className="carousel-indicators">
+    {sampleItems.map((i, idx) => {
+      return(
+        <button className="indicator-buttons"
+          onClick={() => {
+            updateIndex(idx);
+          }}
+        >
+        <span className={`material-symbols-outlined ${
+          idx === activeIndex
+          ? "indicator-symbol-active" : "indicator-symbol"
+        }
+        `}>•</span>
+        </button>
+      )
+    })}
+  </div>
+  
+  <button onClick={() => {
+    updateIndex(activeIndex + 1);
+  }}
+   className="button-arrow">
+    <span className="material-symbols-outlined">arrow_forward_ios</span>
+  </button>
+</div>
+
 
           </div>
         </div>
+      </div>
       </div>
     </Modal>
   );

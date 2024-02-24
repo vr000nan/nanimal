@@ -21,7 +21,7 @@ const MainPage = ({}) => {
             about
             <span aria-hidden class="cybr-btn__glitch">ʇnoqɐ</span>
           </button>
-          <img src="/Placeholder.png" alt="mainImage" className="main-image" />
+          <img src="/ai.png" alt="mainImage" className="main-image" />
           <button type="button" data-modal="modal-skills" class="cybr-btn button-4">
             skills
             <span aria-hidden class="cybr-btn__glitch">sʅʅᴉʞs</span>

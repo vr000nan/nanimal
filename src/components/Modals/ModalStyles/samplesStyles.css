@@ -1,0 +1,69 @@
+.samplesCarousel {
+  overflow: hidden;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.innerCarousel{
+  white-space: nowrap;
+  transition: transform 0.3s;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.carousel-item {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 25rem;
+    width: 100%;
+    background-color: none;
+}
+
+.carousel-item-text {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 1.15rem;
+    margin: 20px 0 40px 0;
+    padding: 0 10px 0 20px;
+    white-space: normal;
+  }
+
+  .carousel-img {
+    width: 300px;
+    border: double 4px transparent;
+    border-radius: 80px;
+    background-image: linear-gradient(white, white), radial-gradient(circle at top left, #59CBE8,#1E22AA);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+}
+
+.carousel-buttons {
+  display: flex;
+  justify-content: center; /* center the buttons horizontally */
+  align-items: center; /* center the buttons vertically */
+  margin-bottom: 30px; /* Add margin to create space between buttons and indicators */
+}
+
+.carousel-buttons button {
+  flex: 0 0 auto;
+  width: 40px;
+  height: 40px; 
+  margin: 0 15px;
+}
+
+.carousel-indicators {
+  display: flex;
+  justify-content: center; /* Center the indicators horizontally */
+  align-items: center;  /* Align the indicators vertically */
+  height: 40px; /* Set a fixed height for the indicators */
+}
+
+.indicator-symbol {
+    color: #4b128b;
+  }
+  
+.indicator-symbol-active {
+    color: #E93CAC;
+}

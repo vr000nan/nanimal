@@ -16,8 +16,8 @@
 }
   
   .cybr-btn {
-    --primary: #4b128b; /* button red */
-    --shadow-primary: #59CBE8; /* button cyan */
+    --primary: #4b128b; 
+    --shadow-primary: #59CBE8; 
     --primary-hue: 0;
     --primary-lightness: 50;
     --color: hsl(0, 0%, 100%);
@@ -58,7 +58,7 @@
   }
   
   .cybr-btn:hover {
-    --primary: #3d067c;
+    --primary: hsl(268, 91%, 25%);
   }
   
   .cybr-btn:after,
