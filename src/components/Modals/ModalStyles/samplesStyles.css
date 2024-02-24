@@ -39,28 +39,31 @@
     background-clip: padding-box, border-box;
 }
 
-
-.indicators {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin-top: 20px;
+.carousel-buttons {
+  display: flex;
+  justify-content: center; /* center the buttons horizontally */
+  align-items: center; /* center the buttons vertically */
+  margin-bottom: 30px; /* Add margin to create space between buttons and indicators */
 }
 
-.indicator-buttons {
-    border: none;
-    cursor: pointer;
+.carousel-buttons button {
+  flex: 0 0 auto;
+  width: 40px;
+  height: 40px; 
+  margin: 0 15px;
 }
-  
-.indicators > button {
-    margin: 5px;
-    background: none;
+
+.carousel-indicators {
+  display: flex;
+  justify-content: center; /* Center the indicators horizontally */
+  align-items: center;  /* Align the indicators vertically */
+  height: 40px; /* Set a fixed height for the indicators */
 }
 
 .indicator-symbol {
-    color: #26343f;
+    color: #4b128b;
   }
   
-  .indicator-symbol-active {
-    color: #ffffff;
-  }
+.indicator-symbol-active {
+    color: #E93CAC;
+}

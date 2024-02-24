@@ -92,39 +92,39 @@ const Samples = ({ closeFn = () => null, open = false }) => {
               </div>
 
               <div className="carousel-buttons">
-                  <button onClick={() => {
-                    updateIndex(activeIndex - 1);
-                  }}
-                   className="button-arrow">
-                  <span class="material-symbols-outlined">arrow_back_ios</span>
-                  </button>
-                  <div className="carousel-indicators">
-                    {sampleItems.map((i, idx) => {
-                      return(
-                        <button className="indicator-buttons"
-                          onClick={() => {
-                            updateIndex(idx);
-                          }}
-                        >
-                        <span class={`material-symbols-outlined ${
-                          idx === activeIndex
-                          ? "indicator-symbol-active" : "indicator-symbol"
-                        }
-                        `}>radio_button_checked</span>
-                        </button>
-                      )
-                    })}
+  <button onClick={() => {
+    updateIndex(activeIndex - 1);
+  }}
+   className="button-arrow">
+  <span className="material-symbols-outlined">arrow_back_ios</span>
+  </button>
+  
+  <div className="carousel-indicators">
+    {sampleItems.map((i, idx) => {
+      return(
+        <button className="indicator-buttons"
+          onClick={() => {
+            updateIndex(idx);
+          }}
+        >
+        <span className={`material-symbols-outlined ${
+          idx === activeIndex
+          ? "indicator-symbol-active" : "indicator-symbol"
+        }
+        `}>•</span>
+        </button>
+      )
+    })}
+  </div>
+  
+  <button onClick={() => {
+    updateIndex(activeIndex + 1);
+  }}
+   className="button-arrow">
+    <span className="material-symbols-outlined">arrow_forward_ios</span>
+  </button>
+</div>
 
-                  </div>
-                  <div className="carousel-buttons">
-                  <button onClick={() => {
-                    updateIndex(activeIndex + 1);
-                  }}
-                   className="button-arrow">
-                    <span class="material-symbols-outlined">arrow_forward_ios</span>
-                  </button>
-              </div>
-            </div>
 
           </div>
         </div>
