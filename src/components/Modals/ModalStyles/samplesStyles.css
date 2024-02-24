@@ -17,21 +17,28 @@
     align-items: center;
     justify-content: center;
     height: 25rem;
-    background-color: #fff;
+    width: 100%;
+    background-color: none;
 }
 
 .carousel-item-text {
+    display: flex;
+    flex-wrap: wrap;
     font-size: 1.15rem;
-    margin: 40px 0 40px 0;
-    padding: 0 20px 0 20px;
+    margin: 20px 0 40px 0;
+    padding: 0 10px 0 20px;
     white-space: normal;
-    color: #617d98;
   }
 
-.carousel-img {
+  .carousel-img {
     width: 300px;
-    padding: 0 20px 0 20px;
+    border: double 4px transparent;
+    border-radius: 80px;
+    background-image: linear-gradient(white, white), radial-gradient(circle at top left, #59CBE8,#1E22AA);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
 }
+
 
 .indicators {
     display: flex;

@@ -25,28 +25,32 @@ const Samples = ({ closeFn = () => null, open = false }) => {
   const sampleItems = [
     {
       title: "Item 1",
-      description: "Brief Description",
-      
+      description: "Brief Description of the project. What it is, what it does...",
+      tech: "tech icons used in the making",
       icon: "PlaceholderAbout.png"
     },
     {
-      title: "Item 2",
-      description: "Brief Description 2",
+      title: "Item 1",
+      description: "Brief Description of the project. What it is, what it does...",
+      tech: "tech icons used in the making",
       icon: "PlaceholderAbout.png"
     },
     {
-      title: "Item 3",
-      description: "Brief Description 3",
+      title: "Item 1",
+      description: "Brief Description of the project. What it is, what it does...",
+      tech: "tech icons used in the making",
       icon: "PlaceholderAbout.png"
     },
     {
-      title: "Item 3",
-      description: "Brief Description 4",
+      title: "Item 1",
+      description: "Brief Description of the project. What it is, what it does...",
+      tech: "tech icons used in the making",
       icon: "PlaceholderAbout.png"
     },
     {
-      title: "Item 5",
-      description: "Brief Description 5",
+      title: "Item 1",
+      description: "Brief Description of the project. What it is, what it does...",
+      tech: "tech icons used in the making",
       icon: "PlaceholderAbout.png"
     }
   ];
