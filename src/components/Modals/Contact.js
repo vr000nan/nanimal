@@ -1,6 +1,7 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 import Modal from "./Modal";
 import './ModalStyles/modalStyles.css'
+import emailjs from '@emailjs/browser';
 
 const Contact = ({ closeFn = () => null, open = false }) => {
   useEffect(() => {
@@ -19,6 +20,26 @@ const Contact = ({ closeFn = () => null, open = false }) => {
     };
   }, [closeFn, open]);
 
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm('service_z71ff47', 'template_f1rovdp', form.current, {
+        publicKey: '-kMXpnB_FSQvQL1R-',
+      })
+      .then(
+        () => {
+          console.log('SUCCESS!');
+        },
+        (error) => {
+          console.log('FAILED...', error.text);
+        },
+      );
+      e.target.reset();
+  };
+
   return (
     <Modal open={open}>
       <div className="modal--mask">
@@ -33,11 +54,12 @@ const Contact = ({ closeFn = () => null, open = false }) => {
             
               <section>
                 <div className="contact-container">
-                  <form className="contact-form">
+                  <form ref={form} onSubmit={sendEmail} className="contact-form">
                     <input type="text" placeholder="Your Name" name="user_name" required />
                     <input type="email" placeholder="Your Email Address" name="user_email" required />
                     <input type="text" placeholder="Hello Nan! Let's Get in Touch!" name="subject" required />
                     <textarea name="message" cols="30" rows="10">
+
                     </textarea>
                     <button type="submit">Send Message</button>
                   </form>
