@@ -1,6 +1,7 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import Modal from "./Modal";
 import './ModalStyles/modalStyles.css'
+import './ModalStyles/skillsStyles.css'
 
 const Skills = ({ closeFn = () => null, open = false }) => {
   useEffect(() => {
@@ -19,6 +20,29 @@ const Skills = ({ closeFn = () => null, open = false }) => {
     };
   }, [closeFn, open]);
 
+  const [hoveredIndex, setHoveredIndex] = useState(null);
+
+  const skillsData = [
+    { imageUrl: "/PlaceholderAbout.png", text: "Text for Image 1" },
+    { imageUrl: "/PlaceholderAbout.png", text: "Text for Image 2" },
+    { imageUrl: "/PlaceholderAbout.png", text: "Text for Image 1" },
+    { imageUrl: "/PlaceholderAbout.png", text: "Text for Image 2" },
+    { imageUrl: "/PlaceholderAbout.png", text: "Text for Image 1" },
+    { imageUrl: "/PlaceholderAbout.png", text: "Text for Image 2" },
+    { imageUrl: "/PlaceholderAbout.png", text: "Text for Image 1" },
+    { imageUrl: "/PlaceholderAbout.png", text: "Text for Image 2" },
+    { imageUrl: "/PlaceholderAbout.png", text: "Text for Image 1" },
+  ];
+
+  const handleMouseEnter = (index) => {
+    setHoveredIndex(index);
+  };
+
+  const handleMouseLeave = () => {
+    setHoveredIndex(null);
+  };
+
+
   return (
     <Modal open={open}>
       <div className="modal--mask">
@@ -34,18 +58,25 @@ const Skills = ({ closeFn = () => null, open = false }) => {
 
             </h1>
 
-            <img src="/PlaceholderAbout.png" alt="aboutImage" className="about-image" />
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Viverra aliquet eget sit amet tellus cras. Sit amet est placerat in egestas erat imperdiet. Lacus vestibulum sed arcu non odio. Augue neque gravida in fermentum et.
-              <br></br>
-              Lacinia quis vel eros donec ac odio. Ac ut consequat semper viverra nam libero justo laoreet. Porta lorem mollis aliquam ut. Ornare arcu dui vivamus arcu felis. Vel eros donec ac odio tempor orci dapibus ultrices. Adipiscing vitae proin sagittis nisl rhoncus. Tortor id aliquet lectus proin nibh.
-            </p>
-
-            <div className="about-icons">
-            <a href="https://www.linkedin.com/in/nan-wroblewski-09547a224/"><img src="/linkedinIcon.png"></img></a>
-            <a href="https://www.linkedin.com/in/nan-wroblewski-09547a224/"><img src="/githubIcon.png"></img></a>
-            <a href="https://www.linkedin.com/in/nan-wroblewski-09547a224/"><img src="/instagramIcon.png"></img></a>
-            </div>
+            <section className="images-container">
+              {skillsData.map((item, index) => (
+                <div
+                  key={index}
+                  className="image-container"
+                  onMouseEnter={() => handleMouseEnter(index)}
+                  onMouseLeave={handleMouseLeave}
+                  style={{ height: `calc(100% / 3 - 20px)` }} // Adjust height for three rows with gap
+                >
+                  <img src={item.imageUrl} alt={`Image ${index + 1}`} />
+                  {hoveredIndex === index && (
+                    <div className="overlay">
+                      <h2>{item.text}</h2>
+                      {/* Additional overlay content can go here */}
+                    </div>
+                  )}
+                </div>
+              ))}
+            </section>
 
           </div>
         </div>
