@@ -12,3 +12,6 @@
 
 #Main Page Images
     AI: https://www.flaticon.com/free-icon/ai_1693746?related_id=1693783&origin=search
+
+#Contact Form
+    Email sends via EmailJs

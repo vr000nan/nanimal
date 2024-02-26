@@ -1,6 +1,8 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 import Modal from "./Modal";
 import './ModalStyles/modalStyles.css'
+import './ModalStyles/contactStyles.css'
+import emailjs from '@emailjs/browser';
 
 const Contact = ({ closeFn = () => null, open = false }) => {
   useEffect(() => {
@@ -19,40 +21,49 @@ const Contact = ({ closeFn = () => null, open = false }) => {
     };
   }, [closeFn, open]);
 
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm('service_z71ff47', 'template_f1rovdp', form.current, {
+        publicKey: '-kMXpnB_FSQvQL1R-',
+      })
+      .then(
+        () => {
+          console.log('SUCCESS!');
+        },
+        (error) => {
+          console.log('FAILED...', error.text);
+        },
+      );
+      e.target.reset();
+  };
+
   return (
     <Modal open={open}>
       <div className="modal--mask">
         <div className="modal-window">
 
           <div className="modal--body">
-
-
-            {/* <div className="modal--x">
+            <h1>Contact Me
               <button type="button" onClick={closeFn}>
                 X
               </button>
-            </div> */}
-            <h1>About
-
-              <button type="button" onClick={closeFn}>
-                X
-              </button>
-
             </h1>
-
-            <img src="/PlaceholderAbout.png" alt="aboutImage" className="about-image" />
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Viverra aliquet eget sit amet tellus cras. Sit amet est placerat in egestas erat imperdiet. Lacus vestibulum sed arcu non odio. Augue neque gravida in fermentum et.
-              <br></br>
-              Lacinia quis vel eros donec ac odio. Ac ut consequat semper viverra nam libero justo laoreet. Porta lorem mollis aliquam ut. Ornare arcu dui vivamus arcu felis. Vel eros donec ac odio tempor orci dapibus ultrices. Adipiscing vitae proin sagittis nisl rhoncus. Tortor id aliquet lectus proin nibh.
-            </p>
-
-            <div className="about-icons">
-            <a href="https://www.linkedin.com/in/nan-wroblewski-09547a224/"><img src="/linkedinIcon.png"></img></a>
-            <a href="https://www.linkedin.com/in/nan-wroblewski-09547a224/"><img src="/githubIcon.png"></img></a>
-            <a href="https://www.linkedin.com/in/nan-wroblewski-09547a224/"><img src="/instagramIcon.png"></img></a>
-            </div>
-
+            
+              <section>
+                <div className="contact-container">
+                  <form ref={form} onSubmit={sendEmail} className="contact-form">
+                    <input type="text" placeholder="Your Name" name="user_name" required />
+                    <input type="email" placeholder="Your Email Address" name="user_email" required />
+                    <input type="text" placeholder="Hello, Nan! Let's Get in Touch!" name="subject" required/>
+                    <textarea name="message" cols="30" rows="15">Write your message here!</textarea>
+                    <button type="submit">SEND MESSAGE</button>
+                  </form>
+                </div>
+              </section>
           </div>
         </div>
       </div>
