@@ -71,7 +71,6 @@ const Skills = ({ closeFn = () => null, open = false }) => {
                   {hoveredIndex === index && (
                     <div className="overlay">
                       <h2>{item.text}</h2>
-                      {/* Additional overlay content can go here */}
                     </div>
                   )}
                 </div>
