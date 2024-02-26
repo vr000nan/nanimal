@@ -23,15 +23,15 @@ const Skills = ({ closeFn = () => null, open = false }) => {
   const [hoveredIndex, setHoveredIndex] = useState(null);
 
   const skillsData = [
-    { imageUrl: "/PlaceholderAbout.png", text: "Text for Image 1" },
-    { imageUrl: "/PlaceholderAbout.png", text: "Text for Image 2" },
-    { imageUrl: "/PlaceholderAbout.png", text: "Text for Image 1" },
-    { imageUrl: "/PlaceholderAbout.png", text: "Text for Image 2" },
-    { imageUrl: "/PlaceholderAbout.png", text: "Text for Image 1" },
-    { imageUrl: "/PlaceholderAbout.png", text: "Text for Image 2" },
-    { imageUrl: "/PlaceholderAbout.png", text: "Text for Image 1" },
-    { imageUrl: "/PlaceholderAbout.png", text: "Text for Image 2" },
-    { imageUrl: "/PlaceholderAbout.png", text: "Text for Image 1" },
+    { imageUrl: "/PlaceholderAbout.png", text: "JavaScript" },
+    { imageUrl: "/PlaceholderAbout.png", text: "HTML5/CSS" },
+    { imageUrl: "/PlaceholderAbout.png", text: "React" },
+    { imageUrl: "/PlaceholderAbout.png", text: "SQL" },
+    { imageUrl: "/PlaceholderAbout.png", text: "Java" },
+    { imageUrl: "/PlaceholderAbout.png", text: "PHP" },
+    { imageUrl: "/PlaceholderAbout.png", text: "Agile Methodologies" },
+    { imageUrl: "/PlaceholderAbout.png", text: "Amazon Web Services" },
+    { imageUrl: "/PlaceholderAbout.png", text: "Wordpress" },
   ];
 
   const handleMouseEnter = (index) => {

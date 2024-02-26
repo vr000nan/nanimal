@@ -2,24 +2,24 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* Adjust the number of columns as needed */
     gap: 20px; /* Adjust the gap between grid items */
-}
-
-.image-container {
+  }
+  
+  .image-container {
     position: relative;
     display: inline-block;
-}
-
-.image-container img {
-    max-width:100%;
+  }
+  
+  .image-container img {
+    max-width:75%;
     height: auto;
     display: block;
-}
-
-.overlay {
+  }
+  
+  .overlay {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 75%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
     color: #fff;
@@ -29,17 +29,20 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
-.overlay:hover {
+    z-index: 1; /* Ensure overlay appears above image */
+  }
+  
+  .image-container:hover .overlay {
     opacity: 1;
-}
-
-.overlay h2 {
+    z-index: 2; /* Ensure overlay appears above other images */
+  }
+  
+  .overlay h2 {
     font-size: 24px;
     margin-bottom: 10px;
-}
-
-.overlay p {
+  }
+  
+  .overlay p {
     font-size: 16px;
-}
+  }
+  
