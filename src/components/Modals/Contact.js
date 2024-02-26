@@ -58,11 +58,9 @@ const Contact = ({ closeFn = () => null, open = false }) => {
                   <form ref={form} onSubmit={sendEmail} className="contact-form">
                     <input type="text" placeholder="Your Name" name="user_name" required />
                     <input type="email" placeholder="Your Email Address" name="user_email" required />
-                    <input type="text" placeholder="Hello Nan! Let's Get in Touch!" name="subject" required />
-                    <textarea name="message" cols="30" rows="10">
-
-                    </textarea>
-                    <button type="submit">Send Message</button>
+                    <input type="text" placeholder="Hello, Nan! Let's Get in Touch!" name="subject" required />
+                    <textarea name="message" cols="30" rows="15"></textarea>
+                    <button type="submit">SEND MESSAGE</button>
                   </form>
                 </div>
               </section>
