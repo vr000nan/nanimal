@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import Modal from "./Modal";
 import './ModalStyles/modalStyles.css'
+import './ModalStyles/contactStyles.css'
 import emailjs from '@emailjs/browser';
 
 const Contact = ({ closeFn = () => null, open = false }) => {
@@ -46,7 +47,7 @@ const Contact = ({ closeFn = () => null, open = false }) => {
         <div className="modal-window">
 
           <div className="modal--body">
-            <h1>Contact
+            <h1>Contact Me
               <button type="button" onClick={closeFn}>
                 X
               </button>
