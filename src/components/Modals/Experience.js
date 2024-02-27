@@ -1,6 +1,16 @@
 import React, { useEffect } from "react";
 import Modal from "./Modal";
-import './ModalStyles/modalStyles.css'
+import './ModalStyles/modalStyles.css';
+import './ModalStyles/experienceStyles.css'
+
+function AlternatingInfoCard({ info, image, altText, reverse }) {
+  return (
+    <div className={`info ${reverse ? 'reverse' : ''}`}>
+      <img src={image} alt={altText} />
+      <p>{info}</p>
+    </div>
+  );
+}
 
 const Experience = ({ closeFn = () => null, open = false }) => {
   useEffect(() => {
@@ -25,14 +35,7 @@ const Experience = ({ closeFn = () => null, open = false }) => {
         <div className="modal-window">
 
           <div className="modal--body">
-
-
-            {/* <div className="modal--x">
-              <button type="button" onClick={closeFn}>
-                X
-              </button>
-            </div> */}
-            <h1>About
+            <h1>My Work History
 
               <button type="button" onClick={closeFn}>
                 X
@@ -40,17 +43,37 @@ const Experience = ({ closeFn = () => null, open = false }) => {
 
             </h1>
 
-            <img src="/PlaceholderAbout.png" alt="aboutImage" className="about-image" />
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Viverra aliquet eget sit amet tellus cras. Sit amet est placerat in egestas erat imperdiet. Lacus vestibulum sed arcu non odio. Augue neque gravida in fermentum et.
-              <br></br>
-              Lacinia quis vel eros donec ac odio. Ac ut consequat semper viverra nam libero justo laoreet. Porta lorem mollis aliquam ut. Ornare arcu dui vivamus arcu felis. Vel eros donec ac odio tempor orci dapibus ultrices. Adipiscing vitae proin sagittis nisl rhoncus. Tortor id aliquet lectus proin nibh.
-            </p>
-
-            <div className="about-icons">
-            <a href="https://www.linkedin.com/in/nan-wroblewski-09547a224/"><img src="/linkedinIcon.png"></img></a>
-            <a href="https://www.linkedin.com/in/nan-wroblewski-09547a224/"><img src="/githubIcon.png"></img></a>
-            <a href="https://www.linkedin.com/in/nan-wroblewski-09547a224/"><img src="/instagramIcon.png"></img></a>
+            <div className="cards-container">
+              <AlternatingInfoCard
+                info={<>
+                  <h2>Rise Marketing - UI/UX Developer</h2>
+                  <span>August 2023 - Present</span>
+                  <p>I excel in creating engaging web experiences that users love, blending my expertise in JavaScript and PHP with a keen eye for design. I'm passionate about crafting dynamic interfaces using frameworks like React, ensuring they're not just functional but delightful to use. Whether it's implementing responsive design principles or fine-tuning every interaction, my goal is to create web interfaces that leave users smiling.</p>
+                  </>}
+                image="riseLogo.png"
+                altText="Rise Marketing Logo"
+                reverse={false}
+              />
+              <AlternatingInfoCard
+                info={<>
+                <h2>JP Morgan Chase & Co. - Software Engineer 1</h2>
+                <span>October 2022 - July 2023</span>
+                <p>I've had the pleasure of working closely with software teams, where we put our heads together to craft solutions that not only meet but exceed client expectations. My toolkit includes React, Java, SpringBoot, and Typescript, which I wield with expertise to create robust and innovative solutions. With a focus on top-notch code quality, my aim is to not just meet requirements, but to create software that truly shines.</p>
+                </>}
+                image="chaseLogo.png"
+                altText="JP Morgan Chase & Co. Logo"
+                reverse={true}
+              />
+              <AlternatingInfoCard
+                info={<>
+                  <h2>Fullstack Academy - Mentor II</h2>
+                  <span>January 2022 - Present</span>
+                  <p>I've taken a hands-on approach to maintain high grading standards, ensuring that every student gets the support they need to thrive. Together with colleagues, we've brainstormed and implemented curriculum enhancements to keep things fresh and relevant. By conducting detailed progress assessments, I've been able to tailor support and drive continuous improvement, ultimately helping students make successful transitions into the tech industry.</p>
+                  </>}
+                image="fsaLogo.png"
+                altText="Fullstack Academy Logo"
+                reverse={false}
+              />
             </div>
 
           </div>
