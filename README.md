@@ -1,3 +1,6 @@
+#Note
+    To run on your local machine, you'll first need to run npm i. You may need to manually install gsap and @emailjs/browser if they do not install automaatically.
+
 #PreLoader
     Animation created by Sharmil001
     https://github.com/Sharmil001/myportfolio

@@ -22,4 +22,6 @@ body {
 
 h2 {
   color: #59CBE8;
+  margin: 0%;
+  text-transform: uppercase;
 }

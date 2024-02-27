@@ -1,23 +1,40 @@
-.cards-container {
+.info {
     display: flex;
-    flex-direction: column; /* Stack cards vertically */
-    align-items: center; /* Center cards horizontally */
-  }
-  
-  .info {
-    display: flex;
+    flex-direction: row;
     align-items: center;
-    margin-bottom: 20px;
+    width: 100%; /* Ensure the component takes up the full width */
   }
   
   .info img {
-    width: 50px;
-    height: 70px;
+    width: 20%; /* Set width of the image */
+    max-width: 80px; /* Limit the maximum width of the image */
     margin-right: 10px;
-    border-radius: 50%;
+  }
+  
+  .info p {
+    flex-grow: 1; /* Let the text container grow to occupy remaining space */
+    min-width: 0; /* Ensure the text container can shrink if needed */
+    font-size: 16px; /* Reduce the font size for compactness */
+    margin-bottom: 2px; /* Remove default margin */
+  }
+  
+  .info span {
+    color: #00BCE1;
+    font-size: 13px; /* Reduce the font size for compactness */
   }
   
   .info.reverse {
     flex-direction: row-reverse;
   }
   
+  .cards-container {
+    display: flex;
+    flex-direction: column; /* Stack cards vertically */
+    align-items: center; /* Center cards horizontally */
+    width: 100%; /* Ensure the container takes up the full width */
+  }
+  
+
+  h1{
+    margin: 0;
+  }
