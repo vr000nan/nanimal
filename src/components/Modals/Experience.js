@@ -35,7 +35,7 @@ const Experience = ({ closeFn = () => null, open = false }) => {
         <div className="modal-window">
 
           <div className="modal--body">
-            <h1>My Work History
+            <h1>A Few Things I've Done...
 
               <button type="button" onClick={closeFn}>
                 X

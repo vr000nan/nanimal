@@ -50,7 +50,7 @@ const Skills = ({ closeFn = () => null, open = false }) => {
 
           <div className="modal--body">
 
-            <h1>A Few Things I Know
+            <h1>A Few Things I Know...
 
               <button type="button" onClick={closeFn}>
                 X

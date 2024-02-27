@@ -74,7 +74,7 @@ const Samples = ({ closeFn = () => null, open = false }) => {
 
           <div className="modal--body">
 
-            <h1>Samples
+            <h1>A Few Things I've Made...
 
               <button type="button" onClick={closeFn}>
                 X
