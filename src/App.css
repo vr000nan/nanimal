@@ -25,3 +25,8 @@ h2 {
   margin: 0%;
   text-transform: uppercase;
 }
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+}

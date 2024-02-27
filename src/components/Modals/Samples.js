@@ -24,34 +24,22 @@ const Samples = ({ closeFn = () => null, open = false }) => {
   // Carousel Stuff
   const sampleItems = [
     {
-      title: "Item 1",
-      description: "Brief Description of the project. What it is, what it does...",
+      title: "Art Collector",
+      description: "A React.js database made using an API from Harvard Art Museums.",
       tech: "tech icons used in the making",
-      icon: "PlaceholderAbout.png"
+      icon: "horse.png"
     },
     {
-      title: "Item 2",
-      description: "Brief Description of the project. What it is, what it does...",
+      title: "Retro Draw",
+      description: "A simple pixel art app made using Javascript.",
       tech: "tech icons used in the making",
-      icon: "PlaceholderAbout.png"
+      icon: "retro.png"
     },
     {
-      title: "Item 3",
-      description: "Brief Description of the project. What it is, what it does...",
-      tech: "tech icons used in the making",
-      icon: "PlaceholderAbout.png"
-    },
-    {
-      title: "Item 4",
-      description: "Brief Description of the project. What it is, what it does...",
-      tech: "tech icons used in the making",
-      icon: "PlaceholderAbout.png"
-    },
-    {
-      title: "Item 5",
-      description: "Brief Description of the project. What it is, what it does...",
-      tech: "tech icons used in the making",
-      icon: "PlaceholderAbout.png"
+      title: "Snake",
+      description: "The classic computer game Snake! Made in Javascript.",
+      tech: "https://wroblewski-art-collector-react.netlify.app/",
+      icon: "snake.png"
     }
   ];
 
@@ -82,6 +70,7 @@ const Samples = ({ closeFn = () => null, open = false }) => {
 
             </h1>
 
+            <h2>View the code for this site <a href="https://github.com/vr000nan/nanimal" target="_blank">here!</a></h2>
             <div className="samplesCarousel">
               <div className="innerCarousel"
                 style={{transform: `translate(-${activeIndex * 100}%)`}}
