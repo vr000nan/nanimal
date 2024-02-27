@@ -1,6 +1,7 @@
 .contact-container {
     display: flex;
     justify-content: center;
+    margin-top: 30px;
   }
   
   .contact-form {
@@ -32,6 +33,7 @@
   
   .contact-form button[type="submit"] {
     padding: 12px 20px;
+    margin-top: 25px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
@@ -41,6 +43,7 @@
   }
   
   .contact-form button[type="submit"]:hover {
+    
     color: #ffffff;
   }
 
