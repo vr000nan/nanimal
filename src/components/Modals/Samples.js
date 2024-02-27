@@ -26,19 +26,19 @@ const Samples = ({ closeFn = () => null, open = false }) => {
     {
       title: "Art Collector",
       description: "A React.js database made using an API from Harvard Art Museums.",
-      tech: "tech icons used in the making",
+      tech: "Live Site Github Repo",
       icon: "horse.png"
     },
     {
       title: "Retro Draw",
       description: "A simple pixel art app made using Javascript.",
-      tech: "tech icons used in the making",
+      tech: "Live Site Github Repo",
       icon: "retro.png"
     },
     {
       title: "Snake",
       description: "The classic computer game Snake! Made in Javascript.",
-      tech: "https://wroblewski-art-collector-react.netlify.app/",
+      tech: "Live Site Github Repo",
       icon: "snake.png"
     }
   ];
