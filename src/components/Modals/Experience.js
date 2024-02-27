@@ -45,21 +45,39 @@ const Experience = ({ closeFn = () => null, open = false }) => {
 
             <div className="cards-container">
               <AlternatingInfoCard
-                info="Info 1: Text giving context."
+                info={<>
+                  <h2>Rise Marketing - UI/UX Developer</h2>
+                  <span>October 2022 - July 2023</span>
+                  <p>Utilize JavaScript and PHP expertise to craft dynamic, user-centric web interfaces, 
+                    adeptly employing frameworks like React, conducting rigorous testing, and implementing responsive design principles to ensure optimal functionality 
+                    and user satisfaction across diverse platforms and devices.</p>
+                  </>}
                 image="riseLogo.png"
-                altText="Image 1"
+                altText="Rise Marketing Logo"
                 reverse={false}
               />
               <AlternatingInfoCard
-                info="Info 2: Text giving context."
+                info={<>
+                <h2>JP Morgan Chase & Co. - Software Engineer 1</h2>
+                <span>October 2022 - July 2023</span>
+                <p>Collaborated with software teams to design, develop, and optimize robust solutions meeting client requirements, 
+                  while leading cross-functional teams to implement cutting-edge software, ensuring top-notch code quality, modernizing legacy systems,
+                   and demonstrating expertise in React, Java, SpringBoot, and Typescript.</p>
+                </>}
                 image="chaseLogo.png"
-                altText="Image 2"
+                altText="JP Morgan Chase & Co. Logo"
                 reverse={true}
               />
               <AlternatingInfoCard
-                info="Info 3: Text giving context."
+                info={<>
+                  <h2>Fullstack Academy - Mentor II</h2>
+                  <span>October 2022 - July 2023</span>
+                  <p>Proactively ensured adherence to grading standards, provided dedicated mentorship to coding bootcamp students,
+                     collaborated on curriculum enhancements, and conducted thorough progress assessments to drive continuous improvement and 
+                     successful transitions into the tech industry.</p>
+                  </>}
                 image="fsaLogo.png"
-                altText="Image 3"
+                altText="Fullstack Academy Logo"
                 reverse={false}
               />
             </div>
