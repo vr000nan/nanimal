@@ -4,13 +4,13 @@
   }
   
   .image-container {
-    margin-left: 20px;
+    margin: 25px 25px 25px 30px;
     position: relative;
     display: inline-block;
   } 
   
   .image-container img {
-    max-width: 87%;
+    max-width: 75%;
     height: auto;
     display: block;
   } 
@@ -19,18 +19,15 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: 87%;
-    height: 475%;
-    background-color: rgba(30, 34, 170, 0.9);
-    color: #fff;
+    width: 75%;
+    height: 5%;
     opacity: 0; /* Start with opacity 0 */
-    transition: opacity 0.5s ease; /* Fade transition */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     z-index: 1; /* Ensure overlay appears above image */
-    animation: fadeIn 0.5s cubic-bezier(0.165, 0.840, 0.440, 1.000);
+    animation: fadeIn 0.3s cubic-bezier(0.165, 0.840, 0.440, 1.000);
   }
   
   .image-container:hover .overlay {
@@ -41,4 +38,5 @@
     font-size: 24px;
     margin-bottom: 10px;
     text-align: center;
+    text-shadow: -1px 1px 0 #1E22AA;
   }

@@ -23,15 +23,15 @@ const Skills = ({ closeFn = () => null, open = false }) => {
   const [hoveredIndex, setHoveredIndex] = useState(null);
 
   const skillsData = [
-    { imageUrl: "/PlaceholderAbout.png", text: "JavaScript" },
-    { imageUrl: "/PlaceholderAbout.png", text: "HTML5/CSS" },
-    { imageUrl: "/PlaceholderAbout.png", text: "React" },
-    { imageUrl: "/PlaceholderAbout.png", text: "SQL" },
-    { imageUrl: "/PlaceholderAbout.png", text: "Java" },
-    { imageUrl: "/PlaceholderAbout.png", text: "PHP" },
-    { imageUrl: "/PlaceholderAbout.png", text: "Agile Methodologies" },
-    { imageUrl: "/PlaceholderAbout.png", text: "Amazon Web Services" },
-    { imageUrl: "/PlaceholderAbout.png", text: "Wordpress" },
+    { imageUrl: "/jsLogo.png", text: "JavaScript" },
+    { imageUrl: "/htmlLogo.png", text: "HTML5/CSS" },
+    { imageUrl: "/reactLogo.png", text: "React" },
+    { imageUrl: "/sqlLogo.png", text: "SQL" },
+    { imageUrl: "/javaLogo.png", text: "Java" },
+    { imageUrl: "/phpLogo.png", text: "PHP" },
+    { imageUrl: "/agileLogo.png", text: "Agile Methodologies" },
+    { imageUrl: "/awsLogo.png", text: "Amazon Web Services" },
+    { imageUrl: "/wordpressLogo.png", text: "Wordpress" },
   ];
 
   const handleMouseEnter = (index) => {
@@ -67,7 +67,7 @@ const Skills = ({ closeFn = () => null, open = false }) => {
                   onMouseLeave={handleMouseLeave}
                   style={{ height: `calc(100% / 3 - 20px)` }} // Adjust height for three rows with gap
                 >
-                  <img src={item.imageUrl} alt={`Image ${index + 1}`} />
+                  <img src={item.imageUrl} alt={` ${index + 1}`} />
                   {hoveredIndex === index && (
                     <div className="overlay">
                       <h2>{item.text}</h2>
