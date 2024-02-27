@@ -1,6 +1,12 @@
 .about-image {
     float: right;
-    height: 40vh;
+    /* height: 40vh; */
+    width: 300px;
+    border: double 4px transparent;
+    border-radius: 80px;
+    background-image: linear-gradient(white, white), radial-gradient(circle at top left, #59CBE8,#1E22AA);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
 }
 
 .about-icons {
