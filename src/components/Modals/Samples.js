@@ -30,25 +30,25 @@ const Samples = ({ closeFn = () => null, open = false }) => {
       icon: "PlaceholderAbout.png"
     },
     {
-      title: "Item 1",
+      title: "Item 2",
       description: "Brief Description of the project. What it is, what it does...",
       tech: "tech icons used in the making",
       icon: "PlaceholderAbout.png"
     },
     {
-      title: "Item 1",
+      title: "Item 3",
       description: "Brief Description of the project. What it is, what it does...",
       tech: "tech icons used in the making",
       icon: "PlaceholderAbout.png"
     },
     {
-      title: "Item 1",
+      title: "Item 4",
       description: "Brief Description of the project. What it is, what it does...",
       tech: "tech icons used in the making",
       icon: "PlaceholderAbout.png"
     },
     {
-      title: "Item 1",
+      title: "Item 5",
       description: "Brief Description of the project. What it is, what it does...",
       tech: "tech icons used in the making",
       icon: "PlaceholderAbout.png"

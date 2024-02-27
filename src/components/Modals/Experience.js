@@ -1,6 +1,16 @@
 import React, { useEffect } from "react";
 import Modal from "./Modal";
-import './ModalStyles/modalStyles.css'
+import './ModalStyles/modalStyles.css';
+import './ModalStyles/experienceStyles.css'
+
+function AlternatingInfoCard({ info, image, altText, reverse }) {
+  return (
+    <div className={`info ${reverse ? 'reverse' : ''}`}>
+      <img src={image} alt={altText} />
+      <p>{info}</p>
+    </div>
+  );
+}
 
 const Experience = ({ closeFn = () => null, open = false }) => {
   useEffect(() => {
@@ -25,14 +35,7 @@ const Experience = ({ closeFn = () => null, open = false }) => {
         <div className="modal-window">
 
           <div className="modal--body">
-
-
-            {/* <div className="modal--x">
-              <button type="button" onClick={closeFn}>
-                X
-              </button>
-            </div> */}
-            <h1>About
+            <h1>My Work History
 
               <button type="button" onClick={closeFn}>
                 X
@@ -40,17 +43,25 @@ const Experience = ({ closeFn = () => null, open = false }) => {
 
             </h1>
 
-            <img src="/PlaceholderAbout.png" alt="aboutImage" className="about-image" />
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Viverra aliquet eget sit amet tellus cras. Sit amet est placerat in egestas erat imperdiet. Lacus vestibulum sed arcu non odio. Augue neque gravida in fermentum et.
-              <br></br>
-              Lacinia quis vel eros donec ac odio. Ac ut consequat semper viverra nam libero justo laoreet. Porta lorem mollis aliquam ut. Ornare arcu dui vivamus arcu felis. Vel eros donec ac odio tempor orci dapibus ultrices. Adipiscing vitae proin sagittis nisl rhoncus. Tortor id aliquet lectus proin nibh.
-            </p>
-
-            <div className="about-icons">
-            <a href="https://www.linkedin.com/in/nan-wroblewski-09547a224/"><img src="/linkedinIcon.png"></img></a>
-            <a href="https://www.linkedin.com/in/nan-wroblewski-09547a224/"><img src="/githubIcon.png"></img></a>
-            <a href="https://www.linkedin.com/in/nan-wroblewski-09547a224/"><img src="/instagramIcon.png"></img></a>
+            <div className="cards-container">
+              <AlternatingInfoCard
+                info="Info 1: Text giving context."
+                image="riseLogo.png"
+                altText="Image 1"
+                reverse={false}
+              />
+              <AlternatingInfoCard
+                info="Info 2: Text giving context."
+                image="chaseLogo.png"
+                altText="Image 2"
+                reverse={true}
+              />
+              <AlternatingInfoCard
+                info="Info 3: Text giving context."
+                image="fsaLogo.png"
+                altText="Image 3"
+                reverse={false}
+              />
             </div>
 
           </div>
