@@ -43,9 +43,9 @@ const About = ({ closeFn = () => null, open = false }) => {
             </p>
 
             <div className="about-icons">
-            <a href="https://www.linkedin.com/in/nan-wroblewski-09547a224/"><img src="/linkedinIcon.png"></img></a>
-            <a href="https://www.linkedin.com/in/nan-wroblewski-09547a224/"><img src="/githubIcon.png"></img></a>
-            <a href="https://www.linkedin.com/in/nan-wroblewski-09547a224/"><img src="/instagramIcon.png"></img></a>
+            <a href="https://www.linkedin.com/in/nan-wroblewski-09547a224/" target="_blank"><img src="/linkedinIcon.png"></img></a>
+            <a href="https://www.linkedin.com/in/nan-wroblewski-09547a224/" target="_blank"><img src="/githubIcon.png"></img></a>
+            <a href="https://www.linkedin.com/in/nan-wroblewski-09547a224/" target="_blank"><img src="/instagramIcon.png"></img></a>
             </div>
 
           </div>
