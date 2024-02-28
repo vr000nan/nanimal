@@ -26,20 +26,22 @@ const Samples = ({ closeFn = () => null, open = false }) => {
     {
       title: "Art Collector",
       description: "A React.js database made using an API from Harvard Art Museums.",
-      live: <a href="https://github.com/" target="_blank">Live Site</a>,
-      code: <a href="https://github.com/" target="_blank">Live Site</a>,
+      live: <a href="https://wroblewski-art-collector-react.netlify.app/" target="_blank">Live Site</a>,
+      code: <a href="https://github.com/vr000nan/UNIV_Art_Collector_React_Starter" target="_blank">View Code</a>,
       icon: "horse.png"
     },
     {
       title: "Retro Draw",
       description: "A simple pixel art app made using Javascript.",
-      // tech: "Live Site Github Repo",
+      live: <a href="https://wroblewski-retro-draw.netlify.app/" target="_blank">Live Site</a>,
+      code: <a href="https://github.com/vr000nan/Retro-Draw" target="_blank">View Code</a>,
       icon: "retro.png"
     },
     {
       title: "Snake",
       description: "The classic computer game Snake! Made in Javascript.",
-      // tech: "Live Site Github Repo",
+      live: <a href="https://wroblewski-snake.netlify.app/" target="_blank">Live Site</a>,
+      code: <a href="https://github.com/vr000nan/Snake" target="_blank">View Code</a>,
       icon: "snake.png"
     }
   ];
@@ -72,7 +74,7 @@ const Samples = ({ closeFn = () => null, open = false }) => {
             </h1>
 
             <br></br>
-            <h2>View the code for this site <a href="https://github.com/vr000nan/nanimal" target="_blank">here!</a></h2>
+            <h2><a href="https://github.com/vr000nan/nanimal" target="_blank">View the code for this site here!</a></h2>
 
             <div className="samplesCarousel">
               <div className="innerCarousel"
@@ -84,38 +86,38 @@ const Samples = ({ closeFn = () => null, open = false }) => {
               </div>
 
               <div className="carousel-buttons">
-  <button onClick={() => {
-    updateIndex(activeIndex - 1);
-  }}
-   className="button-arrow">
-  <span className="material-symbols-outlined">arrow_back_ios</span>
-  </button>
+                <button onClick={() => {
+                  updateIndex(activeIndex - 1);
+                }}
+                className="button-arrow">
+                <span className="material-symbols-outlined">arrow_back_ios</span>
+                </button>
+                
+                <div className="carousel-indicators">
+                  {sampleItems.map((i, idx) => {
+                    return(
+                      <button className="indicator-buttons"
+                        onClick={() => {
+                          updateIndex(idx);
+                        }}
+                      >
+                      <span className={`material-symbols-outlined ${
+                        idx === activeIndex
+                        ? "indicator-symbol-active" : "indicator-symbol"
+                      }
+                      `}>•</span>
+                      </button>
+                    )
+                  })}
+                </div>
   
-  <div className="carousel-indicators">
-    {sampleItems.map((i, idx) => {
-      return(
-        <button className="indicator-buttons"
-          onClick={() => {
-            updateIndex(idx);
-          }}
-        >
-        <span className={`material-symbols-outlined ${
-          idx === activeIndex
-          ? "indicator-symbol-active" : "indicator-symbol"
-        }
-        `}>•</span>
-        </button>
-      )
-    })}
-  </div>
-  
-  <button onClick={() => {
-    updateIndex(activeIndex + 1);
-  }}
-   className="button-arrow">
-    <span className="material-symbols-outlined">arrow_forward_ios</span>
-  </button>
-</div>
+                <button onClick={() => {
+                  updateIndex(activeIndex + 1);
+                }}
+                className="button-arrow">
+                  <span className="material-symbols-outlined">arrow_forward_ios</span>
+                </button>
+              </div>
 
 
           </div>

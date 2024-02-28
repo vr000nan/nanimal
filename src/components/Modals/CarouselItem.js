@@ -1,4 +1,5 @@
 import React from "react";
+import './ModalStyles/samplesStyles.css';
 
 const CarouselItem = ({ i }) => {
     return (
@@ -7,8 +8,7 @@ const CarouselItem = ({ i }) => {
             <div className="carousel-item-text">
             <h2>{i.title}</h2>
             <p>{i.description}</p>
-            <span>{i.live}</span>
-            <span>{i.code}</span>
+            <div className="carousel-item-link">{i.live}{i.code}</div>
             </div>
         </div>
     )
