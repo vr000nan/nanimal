@@ -23,7 +23,7 @@
     https://colorpalettes.io/cyberpunk-synthwave-color-palette/
 
 **** Thank you for reading! ****
-      /╲/\ ____/\╱\
+       /╲/\ ____/\╱\
  /╲/\(              )/\╱\
  /╲/\(               )/\╱\
      /╲/\(╭•̀ﮧ •́╮)/\╱\ 
