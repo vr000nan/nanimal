@@ -74,7 +74,7 @@ const Samples = ({ closeFn = () => null, open = false }) => {
             </h1>
 
             <br></br>
-            <h2><a href="https://github.com/vr000nan/nanimal" target="_blank">View the code for this site here!</a></h2>
+            <h2><a href="https://github.com/vr000nan/nanimal" target="_blank">Click Here to See the Code for nanimal.dev</a></h2>
 
             <div className="samplesCarousel">
               <div className="innerCarousel"

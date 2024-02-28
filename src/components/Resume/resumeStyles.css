@@ -8,7 +8,9 @@
     padding-top: 5px;
     margin-left: 1vw;
 
-    font-family: 'Cyber', sans-serif;
+    font-family: "Audiowide", sans-serif;
+    font-weight: 375;
+    font-style: normal;
     background: transparent;
     text-transform: uppercase;
     font-weight: 800;
@@ -23,6 +25,4 @@
 
   .resume-btn:hover {
     color: #ffffff;
-    /* font-family: 'Courier New', Courier, monospace; */
-    /* font-size: 30px; */
   }
