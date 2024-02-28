@@ -40,10 +40,12 @@
     width: 100%;
     font-size: 30px;
     align-items: center;
+
+    font-family: "Audiowide", sans-serif;
+    font-style: normal;
   }
   
-  .contact-form button[type="submit"]:hover {
-    
+  .contact-form button[type="submit"]:hover { 
     color: #ffffff;
   }
 

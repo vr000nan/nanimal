@@ -1,6 +1,6 @@
 .preloader{
-    height: 100vh;
-    width: 100vw;
+    height: 100%;
+    width: 100%;
     background: #051C2C;
     position: fixed;
     bottom: 0;
@@ -17,10 +17,13 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 60px;
-    width: 280px;
-    font-size: 20px;
-    font-weight: 800;
+    width: 400px;
     overflow: hidden;
     color: #00BCE1;
+
+    font-family: "Audiowide", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 25px;
+
 }
