@@ -47,7 +47,7 @@ const Contact = ({ closeFn = () => null, open = false }) => {
         <div className="modal-window">
 
           <div className="modal--body">
-            <h1>Contact Me
+            <h1>Shoot Me a Message...
               <button type="button" onClick={closeFn}>
                 X
               </button>
