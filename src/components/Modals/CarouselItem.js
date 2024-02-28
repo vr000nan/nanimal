@@ -7,7 +7,8 @@ const CarouselItem = ({ i }) => {
             <div className="carousel-item-text">
             <h2>{i.title}</h2>
             <p>{i.description}</p>
-            <span>{i.tech}</span>
+            <span>{i.live}</span>
+            <span>{i.code}</span>
             </div>
         </div>
     )

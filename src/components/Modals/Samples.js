@@ -26,19 +26,20 @@ const Samples = ({ closeFn = () => null, open = false }) => {
     {
       title: "Art Collector",
       description: "A React.js database made using an API from Harvard Art Museums.",
-      tech: "Live Site Github Repo",
+      live: <a href="https://github.com/" target="_blank">Live Site</a>,
+      code: <a href="https://github.com/" target="_blank">Live Site</a>,
       icon: "horse.png"
     },
     {
       title: "Retro Draw",
       description: "A simple pixel art app made using Javascript.",
-      tech: "Live Site Github Repo",
+      // tech: "Live Site Github Repo",
       icon: "retro.png"
     },
     {
       title: "Snake",
       description: "The classic computer game Snake! Made in Javascript.",
-      tech: "Live Site Github Repo",
+      // tech: "Live Site Github Repo",
       icon: "snake.png"
     }
   ];
@@ -70,7 +71,9 @@ const Samples = ({ closeFn = () => null, open = false }) => {
 
             </h1>
 
+            <br></br>
             <h2>View the code for this site <a href="https://github.com/vr000nan/nanimal" target="_blank">here!</a></h2>
+
             <div className="samplesCarousel">
               <div className="innerCarousel"
                 style={{transform: `translate(-${activeIndex * 100}%)`}}
