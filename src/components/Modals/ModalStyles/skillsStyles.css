@@ -1,42 +1,47 @@
 .images-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Adjust the number of columns as needed */
-  }
-  
-  .image-container {
-    margin: 15%;
-    position: relative;
-    /* display: inline-block; */
-  } 
-  
-  .image-container img {
-    max-width: 75%;
-    height: auto;
-    display: block;
-  } 
-  
-  .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 75%;
-    height: 5%;
-    opacity: 0; /* Start with opacity 0 */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    z-index: 1; /* Ensure overlay appears above image */
-    animation: fadeIn 0.3s cubic-bezier(0.165, 0.840, 0.440, 1.000);
-  }
-  
-  .image-container:hover .overlay {
-    opacity: 1; /* Fade in overlay on hover */
-  }
-  
-  .overlay h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
-    text-align: center;
-    text-shadow: -1px 1px 0 #1E22AA;
-  }
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adjust the minimum and maximum width of columns */
+  gap: 20px; /* Add gap between grid items */
+  max-height: 100%; /* Ensure container doesn't exceed modal height */
+
+}
+
+.image-container {
+  position: relative;
+  justify-content: space-around;
+  margin: 10%;
+}
+
+.image-container img {
+  max-width: 100%; /* Ensure images don't exceed their container width */
+  max-height: 140px; /* Limit the maximum height of images */
+  height: auto;
+  display: block;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; /* Occupy entire width of parent container */
+  height: 100%; /* Occupy entire height of parent container */
+  opacity: 0; /* Start with opacity 0 */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1; /* Ensure overlay appears above image */
+  animation: fadeIn 0.3s cubic-bezier(0.165, 0.840, 0.440, 1.000);
+}
+
+.image-container:hover .overlay {
+  opacity: 1; /* Fade in overlay on hover */
+}
+
+.overlay h2 {
+  font-size: 24px;
+  margin-top: 5%;
+  margin-right: 38%;
+  text-align: center;
+  text-shadow: -1px 1px 0 #1E22AA;
+}
