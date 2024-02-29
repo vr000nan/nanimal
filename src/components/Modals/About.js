@@ -36,9 +36,10 @@ const About = ({ closeFn = () => null, open = false }) => {
             <img src="/aboutImage.png" alt="About Image" className="about-image" />
             <h2>Hello world!</h2>
             <p>
-            As a junior frontend developer, I'm constantly hunting for exciting new opportunities! I graduated from FSA in 2021, and have been working in tech ever since, travelling all over the continental US and honing my skills in the meantime.
+            As a junior frontend developer, I'm constantly hunting for exciting new challenges! I graduated from FSA in 2021, and have been working in tech ever since, travelling all over the continental US and honing my skills in the meantime.
             <br></br>
-            With a solid background in computer science and plenty of hands-on experience in UI/UX development, I like to think I bring a nice blend of techie skills and creative flair to the table. Whether I'm jazzing up user experiences with some sleek design magic or diving headfirst into tricky coding puzzles, I'm all about delivering top-notch solutions that not only get the job done but also leave a lasting impression.
+            <br></br>
+            With a strong background in computer science and extensive UI/UX development experience, I bring a blend of technical expertise and creative flair. Whether enhancing user experiences with sleek design or tackling complex coding puzzles, I'm all about delivering top-notch solutions that not only get the job done but also leave a lasting impression.
             <br></br>
             <br></br>
             Let's team up and make some digital dreams come true, shall we? 
