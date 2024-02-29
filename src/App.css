@@ -35,9 +35,9 @@ p {
 }
 
 a {
+  font-family: "Audiowide", sans-serif;
   text-decoration: none;
-  color:#59CBE8;
+  color: #59CBE8;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
 }

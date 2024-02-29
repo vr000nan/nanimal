@@ -28,11 +28,9 @@ const About = ({ closeFn = () => null, open = false }) => {
           <div className="modal--body">
 
             <h1>A Little About Me...
-
               <button type="button" onClick={closeFn}>
                 X
               </button>
-
             </h1>
 
             <img src="/aboutImage.png" alt="About Image" className="about-image" />

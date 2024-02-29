@@ -33,7 +33,7 @@ const MainPage = ({}) => {
 
           <div className="resume-btn-container">
             <PDFDownloadLink document={<PDFFile/>} fileName="Nan-Resume">
-              <button className="resume-btn">View My Resume</button>
+              <button className="resume-btn">Download Resume</button>
             </PDFDownloadLink>
           </div>
         </div>

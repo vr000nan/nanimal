@@ -57,7 +57,7 @@ const Header = () => (
       <Text style={headerStyles.link}>
         <Link href="https://www.linkedin.com/in/nan-wroblewski-09547a224/">LinkedIn</Link> |{' '}
         <Link href="https://github.com/vr000nan">GitHub</Link> |{' '}
-        <Link href="https://vr000nan.netlify.com">Portfolio</Link>
+        <Link href="nanimal.dev">Portfolio</Link> |{' '}
       </Text>
     </View>
   </View>

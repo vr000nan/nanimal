@@ -4,9 +4,9 @@
   }
   
   .image-container {
-    margin: 25px 25px 25px 30px;
+    margin: 15%;
     position: relative;
-    display: inline-block;
+    /* display: inline-block; */
   } 
   
   .image-container img {
