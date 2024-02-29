@@ -19,7 +19,9 @@
   width: 40%;
   height: 76%;
 
-  /* border: #3d1875 double 5px; */
+  overflow-x: auto;
+  scrollbar-width: thin; /* "auto" or "thin" depending on browser support */
+  scrollbar-color: #4b128b #201547; /* Track and thumb color */
 }
 
 @keyframes fadeIn {

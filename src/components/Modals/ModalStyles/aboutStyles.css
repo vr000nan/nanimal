@@ -1,9 +1,9 @@
 .about-image {
     float: right;
-    /* height: 40vh; */
-    width: 300px;
+    width: 50%; /* Adjust width relative to the parent container */
+    max-width: 300px; /* Limit maximum width */
     border: double 4px transparent;
-    border-radius: 80px;
+    border-radius: 20%; /* Adjust border radius relative to width */
     background-image: linear-gradient(white, white), radial-gradient(circle at top left, #59CBE8,#1E22AA);
     background-origin: border-box;
     background-clip: padding-box, border-box;
@@ -13,6 +13,5 @@
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    margin-left: 20%;
-    margin-right: 20%;
+    margin: 0 5%; /* Adjust margins relative to the parent container */
 }
