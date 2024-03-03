@@ -232,7 +232,7 @@ const Education = () => (
   <View style={educationStyles.container}>
     <Title>Education</Title>
     <Text style={educationStyles.title}>Certificate in Web Development and Software Engineering | December 2021</Text>
-    <Text style={educationStyles.details}>University Of North Florida (Jacksonville, Florida)</Text>
+    <Text style={educationStyles.details}>University Of North Florida (Jacksonville, FL)</Text>
     <Text style={educationStyles.title}>AWS Cloud Practitioner Certificate | February 2023</Text>
     <Text style={educationStyles.details}>Amazon Web Services (Remote, PA)</Text>
     <Text style={educationStyles.title}>Certified Scrum Master | January 2024</Text>
