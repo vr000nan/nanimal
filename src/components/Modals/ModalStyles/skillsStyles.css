@@ -3,13 +3,14 @@
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adjust the minimum and maximum width of columns */
   gap: 20px; /* Add gap between grid items */
   max-height: 100%; /* Ensure container doesn't exceed modal height */
-
+  justify-content: center; /* Center grid items horizontally */
+  align-items: center; /* Center grid items vertically */
 }
 
 .image-container {
   position: relative;
-  justify-content: space-around;
-  margin: 10%;
+  /* justify-content: space-around; */ /* Remove this line */
+  /* margin: 10%; */ /* Remove this line */
 }
 
 .image-container img {
@@ -17,6 +18,7 @@
   max-height: 140px; /* Limit the maximum height of images */
   height: auto;
   display: block;
+  margin: 0 auto; /* Center images horizontally */
 }
 
 .overlay {
@@ -40,8 +42,8 @@
 
 .overlay h2 {
   font-size: 24px;
-  margin-top: 5%;
-  margin-right: 38%;
+  /* margin-top: 5%; */ /* Remove this line */
+  /* margin-right: 38%; */ /* Remove this line */
   text-align: center;
-  text-shadow: -1px 1px 0 #1E22AA;
+  text-shadow: -2px 1px 0 #1E22AA;
 }
