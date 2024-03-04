@@ -7,7 +7,7 @@
 }
 
 .main-image {
-  width: 300px; /* Adjust the width of the image as needed */
+  width: 65%; /* Adjust the width of the image as needed */
   height: auto; /* Maintain aspect ratio */
   position: absolute;
   top: 50%; /* Place the image at the center vertically */
