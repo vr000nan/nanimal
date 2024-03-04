@@ -40,3 +40,18 @@ a {
   display: flex;
   flex-direction: row;
 }
+
+/* Mobile Styles */
+@media only screen and (max-width: 600px) {
+  h2 {
+    font-size: 16px; /* Decrease font size for smaller screens */
+  }
+  
+  p {
+    font-size: 14px; /* Decrease font size for smaller screens */
+  }
+  
+  a {
+    font-size: 14px; /* Decrease font size for smaller screens */
+  }
+}

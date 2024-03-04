@@ -26,3 +26,10 @@
   .resume-btn:hover {
     color: #ffffff;
   }
+
+  /* Mobile Styles */
+  @media only screen and (max-width: 600px) {
+    .resume-btn {
+      padding-top: 10px; /* Increase padding for better touch interaction */
+    }
+  }
