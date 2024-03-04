@@ -9,13 +9,11 @@
 
 .image-container {
   position: relative;
-  /* justify-content: space-around; */ /* Remove this line */
-  /* margin: 10%; */ /* Remove this line */
 }
 
 .image-container img {
   max-width: 100%; /* Ensure images don't exceed their container width */
-  max-height: 140px; /* Limit the maximum height of images */
+  max-height: 140px;
   height: auto;
   display: block;
   margin: 0 auto; /* Center images horizontally */
@@ -27,7 +25,7 @@
   left: 0;
   width: 100%; /* Occupy entire width of parent container */
   height: 100%; /* Occupy entire height of parent container */
-  opacity: 0; /* Start with opacity 0 */
+  opacity: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -42,8 +40,6 @@
 
 .overlay h2 {
   font-size: 24px;
-  /* margin-top: 5%; */ /* Remove this line */
-  /* margin-right: 38%; */ /* Remove this line */
   text-align: center;
   text-shadow: -2px 1px 0 #1E22AA;
 }
