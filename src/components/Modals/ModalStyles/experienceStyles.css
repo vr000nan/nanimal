@@ -34,10 +34,6 @@
     width: 100%; /* Ensure the container takes up the full width */
     max-height: 530px; /* Set a maximum height for the container */
     overflow-y: auto; /* Add vertical scrollbar when content overflows */
-
-    /* Style the scrollbar */
-    scrollbar-width: thin; /* "auto" or "thin" depending on browser support */
-    scrollbar-color: #4b128b #201547; /* Track and thumb color */
   }
 
   h1{

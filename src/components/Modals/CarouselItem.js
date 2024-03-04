@@ -8,7 +8,8 @@ const CarouselItem = ({ i }) => {
             <div className="carousel-item-text">
             <h2>{i.title}</h2>
             <p>{i.description}</p>
-            <a className="carousel-item-link">{i.live} || {i.code}</a>
+            <a className="carousel-item-link">{i.live}</a>
+            <a className="carousel-item-link">{i.code}</a>
             </div>
         </div>
     )
