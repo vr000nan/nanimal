@@ -214,3 +214,34 @@
     top: calc(68% - 75px); /* Adjust the distance from the top */
     left: calc(100% + 95px); /* Adjust the distance from the left */
 }
+
+/* Mobile Styles */
+@media only screen and (max-width: 600px) {
+  .container {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    padding: 20px; /* Add padding for spacing */
+  }
+
+  .main-image {
+    width: 50%; /* Adjust the width of the image */
+    position: static; /* Remove absolute positioning */
+    transform: none; /* Remove translation */
+    margin-top: 275px; /* Add margin for spacing */
+  }
+
+  .resume-btn-container {
+    margin-bottom: 20px; /* Add margin for spacing */
+  }
+
+  .cybr-btn {
+    width: 100%; /* Set button width to fill container */
+    margin-bottom: 10px; /* Add margin between buttons */
+    left: auto; /* Reset left positioning */
+  }
+
+  .button-1, .button-2, .button-3, .button-4, .button-5 {
+    top: auto; /* Reset top positioning */
+    left: auto; /* Reset left positioning */
+  }
+}
