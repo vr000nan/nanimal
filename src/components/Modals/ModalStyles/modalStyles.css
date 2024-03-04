@@ -20,8 +20,6 @@
   height: 76%;
 
   overflow-x: auto;
-  scrollbar-width: thin; /* "auto" or "thin" depending on browser support */
-  scrollbar-color: #4b128b #201547; /* Track and thumb color */
 }
 
 @keyframes fadeIn {

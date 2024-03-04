@@ -1,18 +1,18 @@
-
-
 * {
   box-sizing: border-box;
+  /* Style the scrollbar */
+  scrollbar-width: thin; /* "auto" or "thin" depending on browser support */
+  scrollbar-color: #4b128b #201547; /* Track and thumb color */
 }
 
 body {
-  overflow: hidden;
+  /* overflow: hidden; */ /* Remove this line to allow scroll bars */
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: center;
   min-height: 100vh;
   font-family: 'Cyber', sans-serif;
-
   background: #361566;
 }
 
@@ -24,7 +24,6 @@ h2 {
   color: #59CBE8;
   margin: 0%;
   text-transform: uppercase;
-
   font-family: "Audiowide", sans-serif;
   font-style: normal;
   font-size: 20px;
