@@ -216,48 +216,50 @@
 }
 
 /* Mobile Styles */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 640px) {
   .container {
     flex-direction: column; /* Stack items vertically */
     align-items: center; /* Center items horizontally */
-    padding: 20px; /* Add padding for spacing */
-    overflow: hidden;
+    padding: 5vw; /* Add padding for spacing */
+    overflow-x: scroll;
   }
 
   .main-image {
-    width: 50%; /* Adjust the width of the image */
-    position: static; /* Remove absolute positioning */
-    transform: none; /* Remove translation */
-    margin-top: 275px; /* Add margin for spacing */
+    width: 50%;
+    position: relative;
+    top: 0;
+    margin-top: 15vh;
+    margin-right: 45vw;
   }
 
   .resume-btn-container {
-    margin-bottom: 20px; /* Add margin for spacing */
+    margin-top: 10px; /* Adjust margin top for spacing */
+    margin-bottom: 20px; /* Adjust margin bottom for spacing */
   }
 
   .cybr-btn {
     width: 100%; /* Set button width to fill container */
-    margin-bottom: 10px; /* Add margin between buttons */
+    margin-bottom: 4vh; /* Add margin between buttons */
     left: auto; /* Reset left positioning */
   }
 
   .button-3 {
-    top: calc(0% + 190px); 
+    top: calc(0% + 490px); 
   }
 
   .button-2 {
-    top: calc(0% + 275px); 
+    top: calc(0% + 575px); 
   }
 
   .button-4 {
-    top: calc(0% + 360px); 
+    top: calc(0% + 660px); 
   }
 
   .button-5 {
-    top: calc(0% + 445px); 
+    top: calc(0% + 745px); 
   }
 
   .button-1{
-    top: calc(0% + 530px); 
+    top: calc(0% + 830px); 
   }
 }

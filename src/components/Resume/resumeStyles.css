@@ -30,6 +30,14 @@
   /* Mobile Styles */
   @media only screen and (max-width: 600px) {
     .resume-btn {
-      padding-top: 10px; /* Increase padding for better touch interaction */
+      position: relative; /* Ensure the button is not absolutely positioned */
+      margin-bottom: 450px; /* Add margin between buttons */
+      left: auto; /* Reset left positioning */
+      top: 0; /* Reset top positioning */
+    }
+
+    a {
+      margin: 0;
+      padding: 0;
     }
   }
