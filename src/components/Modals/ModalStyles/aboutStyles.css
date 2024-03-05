@@ -1,17 +1,32 @@
 .about-image {
-    float: right;
-    width: 50%; /* Adjust width relative to the parent container */
+    float: none; /* Remove float */
+    width: 100%; /* Set width to 100% for mobile */
     max-width: 300px; /* Limit maximum width */
     border: double 4px transparent;
     border-radius: 20%; /* Adjust border radius relative to width */
     background-image: linear-gradient(white, white), radial-gradient(circle at top left, #59CBE8,#1E22AA);
     background-origin: border-box;
     background-clip: padding-box, border-box;
+    margin-bottom: 20px; /* Add some bottom margin for spacing */
 }
 
 .about-icons {
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    margin: 0 5%; /* Adjust margins relative to the parent container */
+    flex-direction: column; /* Change flex direction to column for mobile */
+    justify-content: center; /* Center align items vertically */
+    align-items: center; /* Center align items horizontally */
+}
+
+/* Media query for mobile devices */
+@media screen and (max-width: 768px) {
+    .about-image {
+        border-radius: 50%; /* Adjust border radius for a circular shape */
+        max-width: 200px; /* Reduce maximum width */
+    }
+
+    .about-icons {
+        flex-direction: row; /* Change flex direction to row for mobile */
+        justify-content: space-around; /* Adjust spacing between icons */
+        margin: 20px 0; /* Add margin to the top and bottom */
+    }
 }
