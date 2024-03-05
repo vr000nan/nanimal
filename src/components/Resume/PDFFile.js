@@ -196,7 +196,7 @@ const Experience = () => (
         "• Collaborated with teams to develop robust solutions meeting client requirements for functionality, scalability, and performance, ensuring continuous improvement.",
         "• Led cross-functional efforts to implement innovative software solutions, enhancing operational efficiency and driving excellence.",
         "• Ensured high code quality through rigorous reviews, modernizing legacy systems for improved functionality and stability.",
-        "• Proactively expanded skills in technologies such as React, Java, SpringBoot, and Typescript, contributing to daily operations and project success."
+        "• Proactively expanded skills in technologies such as React, Java, SpringBoot, Amazon Web Services, and Typescript, contributing to daily operations and project success."
       ]}
     />
     <ExperienceEntry
