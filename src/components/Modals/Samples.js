@@ -24,6 +24,13 @@ const Samples = ({ closeFn = () => null, open = false }) => {
   // Carousel Stuff
   const sampleItems = [
     {
+      title: "Vrésumé",
+      description: "A recent project that's still underway! This fullstack app helps users login (via Firebase) using their Google or Github account so that they can create and save their own resumes! The frontend is built using React, Typescript, and Tailwind CSS.",
+      live: <a href="https://wroblewski-art-collector-react.netlify.app/" target="_blank">Live Site</a>,
+      code: <a href="https://github.com/vr000nan/resume-builder" target="_blank">View Code</a>,
+      icon: "expressume.png"
+    },
+    {
       title: "Art Collector",
       description: "A React.js database made using an API from Harvard Art Museums.",
       live: <a href="https://wroblewski-art-collector-react.netlify.app/" target="_blank">Live Site</a>,
