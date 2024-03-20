@@ -26,13 +26,13 @@ const Samples = ({ closeFn = () => null, open = false }) => {
     {
       title: "Vrésumé",
       description: "A recent project that's still underway! This fullstack app helps users login (via Firebase) using their Google or Github account so that they can create and save their own resumes! The frontend is built using React, Typescript, and Tailwind CSS.",
-      live: <a href="https://wroblewski-art-collector-react.netlify.app/" target="_blank">Live Site</a>,
+      live: <a href="https://vresume-builder.netlify.app/" target="_blank">Live Site</a>,
       code: <a href="https://github.com/vr000nan/resume-builder" target="_blank">View Code</a>,
       icon: "expressume.png"
     },
     {
       title: "Art Collector",
-      description: "A React.js database made using an API from Harvard Art Museums.",
+      description: "A database made using an API from Harvard Art Museums. This was built with React.js and allows you to search for art pieces all throughout human history!",
       live: <a href="https://wroblewski-art-collector-react.netlify.app/" target="_blank">Live Site</a>,
       code: <a href="https://github.com/vr000nan/UNIV_Art_Collector_React_Starter" target="_blank">View Code</a>,
       icon: "horse.png"
